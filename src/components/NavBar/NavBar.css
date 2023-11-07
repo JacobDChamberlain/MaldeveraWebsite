@@ -8,3 +8,22 @@
     border-bottom: 1px solid black;
     padding: 20px;
 }
+
+.nav-link {
+    text-decoration: none;
+    color: black; /* bold white block letters */
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    /* border: 1px solid red;
+    padding: 9px; */
+    color: rgb(162, 68, 68);
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
