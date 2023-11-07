@@ -1,9 +1,15 @@
 .shows-wrapper {
-    border: 1px solid red;
-    border-radius: 20px;
+    /* border: 1px solid red;
+    border-radius: 20px; */
 
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
+
+    color: white;
+    height: 450px;
+    font-size: 30px;
+    font-weight: bold;
 }

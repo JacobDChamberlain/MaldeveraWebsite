@@ -9,6 +9,8 @@ import About from '../About/About';
 import Shows from '../Shows/Shows';
 import Contact from '../Contact/Contact';
 
+import './App.css';
+
 function App() {
   return (
     <div className="App">
