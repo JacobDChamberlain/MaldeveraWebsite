@@ -12,9 +12,9 @@ import Contact from '../Contact/Contact';
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <NavBar />
       <Header />
-      <BrowserRouter>
         <Routes>
           <Route path='/' Component={ Home } />
           <Route path='/merch' Component={ Merch } />
