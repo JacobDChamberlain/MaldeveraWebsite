@@ -1,9 +1,14 @@
 .header-wrapper {
-    border: 1px solid red;
-    border-radius: 20px;
+    /* border: 1px solid red;
+    border-radius: 20px; */
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
+    height: 200px;
+
+    /* background-image: url('../../../public/images//maldevera_logo.webp');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain; */
 }
