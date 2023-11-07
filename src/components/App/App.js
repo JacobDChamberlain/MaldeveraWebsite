@@ -3,11 +3,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import NavBar from '../NavBar/NavBar';
 import Header from '../Header/Header';
-import Home from '../Home/Home';
-import Merch from '../Merch/Merch';
-import About from '../About/About';
-import Shows from '../Shows/Shows';
-import Contact from '../Contact/Contact';
+import Home from '../Pages/Home/Home';
+import Merch from '../Pages/Merch/Merch';
+import About from '../Pages/About/About';
+import Shows from '../Pages/Shows/Shows';
+import Contact from '../Pages/Contact/Contact';
 
 import './App.css';
 
