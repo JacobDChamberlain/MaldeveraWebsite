@@ -1,16 +1,20 @@
 import React from 'react';
-// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import NavBar from '../NavBar/NavBar';
 import Header from '../Header/Header';
+import Home from '../Home/Home';
+import Merch from '../Merch/Merch';
+import About from '../About/About';
+import Shows from '../Shows/Shows';
+import Contact from '../Contact/Contact';
 
 function App() {
   return (
     <div className="App">
       <NavBar />
       <Header />
-      Welcome to Maldevera
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route path='/' Component={ Home } />
           <Route path='/merch' Component={ Merch } />
@@ -18,7 +22,7 @@ function App() {
           <Route path='/shows' Component={ Shows } />
           <Route path='/contact' Component={ Contact } />
         </Routes>
-      </BrowserRouter> */}
+      </BrowserRouter>
     </div>
   );
 }
