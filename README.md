@@ -1,3 +1,3 @@
 # Maldevera
 
-### "Taste the corners of your mind."
+### Taste the corners of your mind.
