@@ -4,12 +4,13 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    /* border-bottom: 1px solid black; */
 
     color: white;
-    height: 450px;
+    height: auto;
     font-size: 30px;
     font-weight: bold;
+
+    padding-top: 100px;
 }
