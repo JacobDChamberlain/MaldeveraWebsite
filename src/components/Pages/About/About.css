@@ -29,13 +29,12 @@
     padding: 20px;
     margin: 0px;
     list-style: none;
-    width: 600px;
+    width: 80%;
     justify-content: space-evenly;
 }
 
 .individual-photo {
     width: 170px;
-    padding: 20px;
 }
 
 .indivitual-photo-description {
@@ -49,4 +48,5 @@
 .individual-photo-li {
     display: flex;
     flex-direction: column;
+    padding:  10px 10%;
 }
