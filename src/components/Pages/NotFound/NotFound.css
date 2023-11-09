@@ -12,4 +12,8 @@
     height: 465px;
     font-size: 30px;
     font-weight: bold;
+
+    background-image: url('../../../../public/images/frybroke.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
 }

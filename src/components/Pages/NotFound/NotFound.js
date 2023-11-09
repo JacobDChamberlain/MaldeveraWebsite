@@ -4,8 +4,6 @@ import './NotFound.css';
 
 export default function NotFound() {
     return (
-        <div className='not-found-wrapper'>
-            OOPS...PAGE DONT EXIST BRAH
-        </div>
+        <div className='not-found-wrapper'></div>
     )
 }
