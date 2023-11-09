@@ -8,6 +8,7 @@ import Merch from '../Pages/Merch/Merch';
 import About from '../Pages/About/About';
 import Shows from '../Pages/Shows/Shows';
 import Contact from '../Pages/Contact/Contact';
+import NotFound from '../Pages/NotFound/NotFound';
 
 import './App.css';
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/about' Component={ About } />
           <Route path='/shows' Component={ Shows } />
           <Route path='/contact' Component={ Contact } />
+          <Route path='*' Component={ NotFound } />
         </Routes>
       </BrowserRouter>
     </div>
