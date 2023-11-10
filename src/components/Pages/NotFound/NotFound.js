@@ -1,9 +1,10 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import './NotFound.css';
 
 
 export default function NotFound() {
     return (
-        <div className='not-found-wrapper'></div>
+        <NavLink className='not-found-wrapper' to='/'></NavLink>
     )
 }
