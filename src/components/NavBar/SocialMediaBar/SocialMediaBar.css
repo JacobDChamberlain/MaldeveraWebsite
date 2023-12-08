@@ -1,7 +1,27 @@
 .social-media-bar-wrapper {
     display: flex;
+    /* flex-direction: column;
+    width: 100%; */
 }
 
 .social-media-circles {
     display: flex;
+}
+
+.social-media-name {
+    border: 1px solid red;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.social-media-link {
+    border: 1px solid red;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    color: wheat;
 }
