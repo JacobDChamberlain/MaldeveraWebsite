@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import NavBar from '../NavBar/NavBar';
 import Header from '../Header/Header';
+import SocialMediaBar from '../NavBar/SocialMediaBar/SocialMediaBar';
 import Home from '../Pages/Home/Home';
 import Merch from '../Pages/Merch/Merch';
 import About from '../Pages/About/About';
@@ -18,6 +19,7 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Header />
+      <SocialMediaBar />
         <Routes>
           <Route path='/' Component={ Home } />
           <Route path='/merch' Component={ Merch } />
