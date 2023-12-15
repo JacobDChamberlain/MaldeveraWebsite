@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SocialMediaBar.css';
 
 import instagramLogo from '../../../images/social_media-icons/icon-ig.png';
@@ -47,12 +48,14 @@ export default function SocialMediaBar() {
     return (
         <ul className='social-media-links-ul'>
             { socialMediaLinks.map( link => (
-                <img
-                    key={ link.name }
-                    className='social-media-icon'
-                    src={ link.imagePath }
-                    alt='social media icon'
-                />
+                <Link to={ link.url } key={ link.name }>
+                    <img
+                        className='social-media-icon'
+                        src={ link.imagePath }
+                        alt='social media icon'
+                        data-url={ link.url }
+                    />
+                </Link>
             ) ) }
         </ul>
     )
