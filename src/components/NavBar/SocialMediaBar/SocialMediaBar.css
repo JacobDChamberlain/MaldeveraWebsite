@@ -1,27 +1,30 @@
-.social-media-bar-wrapper {
+.social-media-links-ul {
+    /* border: 1px solid red; */
+
     display: flex;
-    /* flex-direction: column;
-    width: 100%; */
+    width: 100%;
+
+    padding-left: 0; /* ul automatically gets 40px padding-left */
+    justify-content: space-evenly;
 }
 
-.social-media-circles {
-    display: flex;
+.social-media-icon {
+    /* border: 1px solid red; */
+
+    height: 50px;
+    width: 50px;
+    border-radius: 40px;
+    object-fit: cover;
 }
 
-.social-media-name {
-    border: 1px solid red;
-    border-radius: 20px;
-
+.social-media-icon:hover {
+    cursor: pointer;
+    background-color: orange;
+    border: 1px solid orange;
     display: flex;
-    flex-direction: column;
-    color: white;
-}
-
-.social-media-link {
-    border: 1px solid red;
-    border-radius: 20px;
-
-    display: flex;
-    flex-direction: column;
-    color: wheat;
+    /* flex-grow: 1; */
+    /* height: 70px;
+    width: 70px; */
+    /* add some sort of animation / transition here */
+    /* experiment with flex grow / shrink */
 }

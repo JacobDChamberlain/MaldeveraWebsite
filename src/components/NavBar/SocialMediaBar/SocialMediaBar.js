@@ -1,75 +1,59 @@
 import React from 'react';
 import './SocialMediaBar.css';
 
+import instagramLogo from '../../../images/social_media-icons/icon-ig.png';
+import facebookLogo from '../../../images/social_media-icons/icon-fb.png';
+import twitterLogo from '../../../images/social_media-icons/icon-tw.png';
+import spotifyLogo from '../../../images/social_media-icons/icon-spot.png';
+import youtubeLogo from '../../../images/social_media-icons/icon-yt.png';
+import appleLogo from '../../../images/social_media-icons/icon-apple.png';
+
 
 const socialMediaLinks = [
     {
         name: 'instagram',
-        links: [
-            'https://www.instagram.com/maldevera',
-            // Instagram circle image link here
-        ]
+        url: 'https://www.instagram.com/maldevera',
+        imagePath: instagramLogo
     },
     {
         name: 'facebook',
-        links: [
-            'https://www.facebook.com/Maldevera',
-            // Facebook circle image link here
-        ]
+        url: 'https://www.facebook.com/Maldevera',
+        imagePath: facebookLogo
     },
     {
         name: 'twitter',
-        links: [
-            'https://twitter.com/maldevera',
-            // Twitter ( 'X' ) circle image link here
-        ]
+        url: 'https://twitter.com/maldevera',
+        imagePath: twitterLogo
     },
     {
         name: 'spotify',
-        links: [
-            'https://open.spotify.com/artist/0CP5nqR6lT3g3StExsINGG',
-            // Spotify circle image link here
-        ]
+        url: 'https://open.spotify.com/artist/0CP5nqR6lT3g3StExsINGG',
+        imagePath: spotifyLogo
     },
     {
         name: 'youtube',
-        links: [
-            'https://www.youtube.com/watch?v=kkldG6rwKF8&t=4s',
-            // YouTube circle image link here
-        ]
+        url: 'https://www.youtube.com/watch?v=kkldG6rwKF8&t=4s',
+        imagePath: youtubeLogo
     },
     {
         name: 'appleMusic',
-        links: [
-            'https://music.apple.com/us/artist/maldevera/546342013'
-            // Apple Music circle image link here
-        ]
+        url: 'https://music.apple.com/us/artist/maldevera/546342013',
+        imagePath: appleLogo
     }
 ];
 
 
-/*
-*  socialMediaLinks[i] = platform
-*  socialMediaLinks[i][0] = link
-*  socialMediaLinks[i][1] = circle image
-*/
-
-
 export default function SocialMediaBar() {
     return (
-        <div className='social-media-bar-wrapper'>
-            <ul className='social-media-circles'>
-                { socialMediaLinks.map( link => (
-                    <div className='social-media-boi'>
-                        <div className='social-media-name'>
-                            { link.name }
-                        </div>
-                        <div className='social-media-link'>
-                            { link.links[0] }
-                        </div>
-                    </div>
-                ) ) }
-            </ul>
-        </div>
+        <ul className='social-media-links-ul'>
+            { socialMediaLinks.map( link => (
+                <img
+                    key={ link.name }
+                    className='social-media-icon'
+                    src={ link.imagePath }
+                    alt='social media icon'
+                />
+            ) ) }
+        </ul>
     )
 }
