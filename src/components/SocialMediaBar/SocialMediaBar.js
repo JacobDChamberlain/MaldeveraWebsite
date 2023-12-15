@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SocialMediaBar.css';
 
-import instagramLogo from '../../../images/social_media-icons/icon-ig.png';
-import facebookLogo from '../../../images/social_media-icons/icon-fb.png';
-import twitterLogo from '../../../images/social_media-icons/icon-tw.png';
-import spotifyLogo from '../../../images/social_media-icons/icon-spot.png';
-import youtubeLogo from '../../../images/social_media-icons/icon-yt.png';
-import appleLogo from '../../../images/social_media-icons/icon-apple.png';
+import instagramLogo from '../../images/social_media-icons/icon-ig.png';
+import facebookLogo from '../../images/social_media-icons/icon-fb.png';
+import twitterLogo from '../../images/social_media-icons/icon-tw.png';
+import spotifyLogo from '../../images/social_media-icons/icon-spot.png';
+import youtubeLogo from '../../images/social_media-icons/icon-yt.png';
+import appleLogo from '../../images/social_media-icons/icon-apple.png';
 
 
 const socialMediaLinks = [
@@ -33,7 +33,7 @@ const socialMediaLinks = [
     },
     {
         name: 'youtube',
-        url: 'https://www.youtube.com/watch?v=kkldG6rwKF8&t=4s',
+        url: 'https://www.youtube.com/watch?v=kkldG6rwKF8&t=21s',
         imagePath: youtubeLogo
     },
     {
