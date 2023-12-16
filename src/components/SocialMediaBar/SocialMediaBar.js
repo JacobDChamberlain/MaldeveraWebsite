@@ -2,12 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './SocialMediaBar.css';
 
-import instagramLogo from '../../images/social_media-icons/icon-ig.png';
-import facebookLogo from '../../images/social_media-icons/icon-fb.png';
-import twitterLogo from '../../images/social_media-icons/icon-tw.png';
-import spotifyLogo from '../../images/social_media-icons/icon-spot.png';
-import youtubeLogo from '../../images/social_media-icons/icon-yt.png';
-import appleLogo from '../../images/social_media-icons/icon-apple.png';
+import instagramLogo from '../../images/social_media-icons/icons8-instagram.svg';
+import facebookLogo from '../../images/social_media-icons/icons8-facebook.svg';
+import twitterLogo from '../../images/social_media-icons/icons8-twitter.svg';
+import spotifyLogo from '../../images/social_media-icons/icons8-spotify.svg';
+import youtubeLogo from '../../images/social_media-icons/icons8-youtube.svg';
+import appleLogo from '../../images/social_media-icons/icons8-music.svg';
 
 
 const socialMediaLinks = [

@@ -16,12 +16,13 @@
     border-radius: 40px;
     object-fit: cover;
     padding: 10px;
+
+    border-radius: 40px;
 }
 
 .social-media-icon:hover {
     cursor: pointer;
     background-color: orange;
-    border: 1px solid orange;
     display: flex;
     /* flex-grow: 1; */
     /* height: 70px;
