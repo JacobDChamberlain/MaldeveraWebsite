@@ -7,8 +7,10 @@
     align-items: center;
     height: 200px;
 
-    /* background-image: url('../../../public/images//maldevera_logo.webp');
+    background-image: url('../../../public/images/Maldevera_logo-BONE_TEXTURE.png');
+
+    /* background-image: url('../../../public/images//maldevera_logo.webp'); */
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain; */
+    background-size: contain;
 }
