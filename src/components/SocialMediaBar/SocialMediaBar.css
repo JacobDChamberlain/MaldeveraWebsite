@@ -5,7 +5,7 @@
     width: 100%;
 
     padding-left: 0; /* ul automatically gets 40px padding-left */
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .social-media-icon {
@@ -15,6 +15,7 @@
     width: 50px;
     border-radius: 40px;
     object-fit: cover;
+    padding: 5px;
 }
 
 .social-media-icon:hover {

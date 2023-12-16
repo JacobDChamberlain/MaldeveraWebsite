@@ -1,9 +1,12 @@
 .App {
   text-align: center;
-  background-image: url('../../../public/images/from-man2mist-version2.png');
+  /* background-image: url('../../../public/images/from-man2mist-version2.png'); */
+  background-image: url('../../images/backgrounds/dsktp_background-1280x720.png');
   /* background-position: initial; */
   background-repeat: no-repeat;
   background-size: 100%;
+  background-attachment: fixed;
+
   height: 100%;
 }
 /*
