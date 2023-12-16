@@ -6,6 +6,9 @@
   background-repeat: no-repeat;
   background-size: 100%;
   background-attachment: fixed;
+  /* learn how to make flex grow/shrink work
+  for resizing screen and keeping background full screen
+  also, this may not be flex grow/shrink */
 
   height: 100%;
 }
