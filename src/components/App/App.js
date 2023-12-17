@@ -10,6 +10,9 @@ import About from '../Pages/About/About';
 import Shows from '../Pages/Shows/Shows';
 import Contact from '../Pages/Contact/Contact';
 import Purchase from '../Pages/Purchase/Purchase';
+
+import SpotifyEmbed from '../SpotifyEmbed/SpotifyEmbed';
+
 import NotFound from '../Pages/NotFound/NotFound';
 
 import './App.css';
@@ -20,6 +23,9 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Header />
+
+      <SpotifyEmbed />
+
       <SocialMediaBar />
         <Routes>
           <Route path='/' Component={ Home } />
