@@ -1,0 +1,31 @@
+.store-item-wrapper {
+    /* border: 1px solid red;
+    border-radius: 40px; */
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.store-item-image {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 400px;
+    width: 400px;
+}
+
+.store-item-info {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.store-item-name {
+    padding: 5px;
+}
+
+.store-item-price {
+    padding: 5px;
+}
