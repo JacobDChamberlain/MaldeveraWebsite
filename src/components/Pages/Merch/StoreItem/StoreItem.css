@@ -29,3 +29,8 @@
 .store-item-price {
     padding: 5px;
 }
+
+.store-item-purchase-button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
