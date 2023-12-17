@@ -13,3 +13,14 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+.merch-ul {
+    /* border: 1px solid red;
+    border-radius: 40px; */
+
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
