@@ -1,11 +1,9 @@
 .App {
   text-align: center;
   /* background-image: url('../../../public/images/from-man2mist-version2.png'); */
-  background-image: url('../../images/backgrounds/dsktp_background-1280x720.png');
+
   /* background-position: initial; */
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+
   /* learn how to make flex grow/shrink work
   for resizing screen and keeping background full screen
   also, this may not be flex grow/shrink */
@@ -16,6 +14,14 @@
 @media screen and (max-width: 480px) {
   .App {
     background-image: url('../../images/backgrounds/mbl_background-360x640.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+  }
+}
+@media screen and (min-width: 481px) {
+  .App {
+    background-image: url('../../images/backgrounds/dsktp_background-1280x720.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
