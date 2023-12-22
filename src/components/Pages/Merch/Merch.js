@@ -6,6 +6,7 @@ import goreLogo from '../../../images/shirt-designs/GORE-LOGO.png';
 import snakeSkull from '../../../images/shirt-designs/snake-skull.png';
 import fm2mFront from '../../../images/shirt-designs/man2mist-FRONT.png';
 import fm2mBack from '../../../images/shirt-designs/man2mist-BACK.png';
+import ImageSwiper from '../../ImageSwiper/ImageSwiper';
 
 
 const shirtDesigns = [
@@ -38,10 +39,13 @@ const shirtDesigns = [
 
 export default function Merch() {
     return (
-        <ul className="merch-ul">
-            { shirtDesigns.map( shirt => (
-                <StoreItem key={ shirt.name } item={ shirt } />
-            )) }
-        </ul>
+        <>
+            <ImageSwiper />
+            <ul className="merch-ul">
+                { shirtDesigns.map( shirt => (
+                    <StoreItem key={ shirt.name } item={ shirt } />
+                )) }
+            </ul>
+        </>
     )
 }
