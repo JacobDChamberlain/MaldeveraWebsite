@@ -27,8 +27,8 @@
 
 
 .swiper-boi {
-    width: 70%;
-    height: 300px;
+    width: 28%;
+    height: 400px;
 }
 
 
@@ -37,4 +37,8 @@
     background-color: rgba(128, 255, 212, 0.5);
     border: 1px solid red;
     border-radius: 40px;
+}
+
+.swiper-slide:hover {
+    cursor: pointer;
 }

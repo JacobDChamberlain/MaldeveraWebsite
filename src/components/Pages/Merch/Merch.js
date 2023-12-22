@@ -36,11 +36,13 @@ const shirtDesigns = [
     }
 ];
 
+const shirtImages = [ goreLogo, snakeSkull, fm2mFront, fm2mBack ];
+
 
 export default function Merch() {
     return (
         <>
-            <ImageSwiper />
+            <ImageSwiper images={ shirtImages } />
             <ul className="merch-ul">
                 { shirtDesigns.map( shirt => (
                     <StoreItem key={ shirt.name } item={ shirt } />
