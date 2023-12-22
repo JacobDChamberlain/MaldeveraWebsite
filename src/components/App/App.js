@@ -24,7 +24,7 @@ function App() {
       <NavBar />
       <Header />
 
-      <SpotifyEmbed />
+      {/* <SpotifyEmbed /> */}
 
       <SocialMediaBar />
         <Routes>
