@@ -6,7 +6,6 @@ import goreLogo from '../../../images/shirt-designs/GORE-LOGO.png';
 import snakeSkull from '../../../images/shirt-designs/snake-skull.png';
 import fm2mFront from '../../../images/shirt-designs/man2mist-FRONT.png';
 import fm2mBack from '../../../images/shirt-designs/man2mist-BACK.png';
-import ImageSwiper from '../../ImageSwiper/ImageSwiper';
 
 
 const shirtDesigns = [
@@ -23,31 +22,20 @@ const shirtDesigns = [
         price: 20
     },
     {
-        name: 'From Man To Mist FRONT',
-        images: [fm2mFront],
-        description: "From Man To Mist, Front of shirt",
-        price: 30
-    },
-    {
-        name: 'From Man To Mist BACK',
-        images: [fm2mBack],
-        description: "From Man To Mist, Front of shirt",
+        name: 'From Man To Mist',
+        images: [fm2mFront, fm2mBack],
+        description: "From Man To Mist",
         price: 30
     }
 ];
 
-const shirtImages = [ goreLogo, snakeSkull, fm2mFront, fm2mBack ];
-
 
 export default function Merch() {
     return (
-        <>
-            <ImageSwiper images={ shirtImages } />
-            <ul className="merch-ul">
-                { shirtDesigns.map( shirt => (
-                    <StoreItem key={ shirt.name } item={ shirt } />
-                )) }
-            </ul>
-        </>
+        <ul className="merch-ul">
+            { shirtDesigns.map( shirt => (
+                <StoreItem key={ shirt.name } item={ shirt } />
+            )) }
+        </ul>
     )
 }

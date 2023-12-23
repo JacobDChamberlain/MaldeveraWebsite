@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './StoreItem.css';
+import ImageSwiper from "../../../ImageSwiper/ImageSwiper";
 
 
 export default function StoreItem({ item }) {
@@ -8,7 +9,11 @@ export default function StoreItem({ item }) {
 
     return (
         <div className="store-item-wrapper">
-            <img className="store-item-image" src={ item.images[0] } alt={ `${ item.description }` } />
+            {
+                item.images.length < 2 ?
+                <img className="store-item-image" src={ item.images[0] } alt={ `${ item.description }` } />
+                : <ImageSwiper images={ item.images } />
+            }
             <div className="store-item-info">
                 <div className="store-item-name">
                     { item.name.toUpperCase() }
