@@ -24,3 +24,25 @@
 
     justify-content: center;
 }
+
+
+.swiper-boi {
+    /* border: 1px solid red;
+    border-radius: 40px; */
+
+    width: 40%;
+    /* height: 400px; */
+}
+
+
+.swiper-slide {
+    /* border: 1px solid red;
+    border-radius: 40px; */
+
+    display: flex;
+    /* background-color: rgba(128, 255, 212, 0.5); */
+}
+
+.swiper-slide:hover {
+    cursor: pointer;
+}

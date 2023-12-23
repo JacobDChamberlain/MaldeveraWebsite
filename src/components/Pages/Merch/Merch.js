@@ -11,26 +11,20 @@ import fm2mBack from '../../../images/shirt-designs/man2mist-BACK.png';
 const shirtDesigns = [
     {
         name: 'Gore Logo',
-        src: goreLogo,
+        images: [goreLogo],
         description: "BAPTIZED...IN BLOOD!",
         price: 20
     },
     {
         name: 'Snake Skull',
-        src: snakeSkull,
+        images: [snakeSkull],
         description: "Salvadora Maldevera",
         price: 20
     },
     {
-        name: 'From Man To Mist FRONT',
-        src: fm2mFront,
-        description: "From Man To Mist, Front of shirt",
-        price: 30
-    },
-    {
-        name: 'From Man To Mist BACK',
-        src: fm2mBack,
-        description: "From Man To Mist, Front of shirt",
+        name: 'From Man To Mist',
+        images: [fm2mFront, fm2mBack],
+        description: "From Man To Mist",
         price: 30
     }
 ];
