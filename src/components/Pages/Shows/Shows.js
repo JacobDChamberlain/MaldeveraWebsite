@@ -4,7 +4,7 @@ import './Shows.css';
 export default function Shows() {
     return (
         <div className="shows-wrapper">
-            SHOWS
+            2024 Dates Coming Soon..
         </div>
     )
 }
