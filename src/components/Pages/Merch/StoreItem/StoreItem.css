@@ -13,6 +13,8 @@
 
     height: 400px;
     width: 400px;
+
+    position: relative;
 }
 
 .store-item-info {
@@ -34,3 +36,21 @@
     cursor: pointer;
     background-color: orange;
 }
+
+
+
+.next-button {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    border-radius: 40px;
+}
+
+
+
+/* to place a button over an image
+( to signify horizontal scrolling ),
+make the image position: relative,
+and the button position: absolute,
+with top: 10px, left: 10px, etc
+to position the button over the image */

@@ -19,6 +19,7 @@ export default function ImageSwiper({ images }) {
             { images.map( image => (
                 <SwiperSlide className='swiper-slide'>
                     <img className='store-item-image' src={ image } alt='cool shirt brah' />
+                    <button className='next-button'>></button>
                 </SwiperSlide>
             ))}
         </Swiper>
