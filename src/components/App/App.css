@@ -61,6 +61,24 @@
     height: 40px;
     width: 40px;
   }
+
+
+
+
+
+  .store-item-wrapper {
+    width: 400px; /** altering this changes visible window of third shirt */
+    padding: 0px;
+  }
+
+
+
+
+  .band-photo-description {
+    width: auto;
+}
+
+  /** consider changing merch centering here */
 }
 
 
