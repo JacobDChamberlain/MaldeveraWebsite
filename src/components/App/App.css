@@ -9,6 +9,11 @@
   also, this may not be flex grow/shrink */
   height: 100%;
   width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 
@@ -38,10 +43,13 @@
 
   .navbar-wrapper {
     width: 90vw;
+    justify-self: center;
   }
   .nav-link {
     font-size: 15px;
   }
+
+
 
   .video-responsive iframe {
     left: 0;
@@ -51,7 +59,14 @@
     /* position: absolute; */
   }
 
+
+  .social-media-icon {
+    height: 40px;
+    width: 40px;
   }
+
+
+}
 
 
 @media screen and (min-width: 481px) {
