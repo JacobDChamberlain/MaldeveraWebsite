@@ -14,13 +14,13 @@
 
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 426px) {
   .App {
 
-    border: 1px solid red;
+    border: 3px solid red;
     border-radius: 40px;
 
-    width: 141%;
+    width: 111%;
 
     background-image: url('../../images/backgrounds/mbl_background-360x640.png');
     /* background-image: url('../../images/backgrounds/dsktp_background-1280x720.png'); */
@@ -29,6 +29,10 @@
     background-attachment: fixed;  /** keep background in place while scrolling */
     background-position: center;
     background-size: cover;
+  }
+
+  .swiper-boi {
+    width: 80%;
   }
 }
 
