@@ -17,8 +17,8 @@
 @media screen and (max-width: 426px) {
   .App {
 
-    border: 3px solid red;
-    border-radius: 40px;
+    /* border: 3px solid red;
+    border-radius: 40px; */
 
     width: 111%;
 
@@ -33,6 +33,14 @@
 
   .swiper-boi {
     width: 80%;
+  }
+
+
+  .navbar-wrapper {
+    width: 100vw;
+  }
+  .nav-link {
+    font-size: 15px;
   }
 }
 
