@@ -13,3 +13,7 @@
     font-size: 30px;
     font-weight: bold;
 }
+
+.show-dates-ul {
+    list-style: none;
+}
