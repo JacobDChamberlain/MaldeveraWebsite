@@ -8,7 +8,7 @@
   for resizing screen and keeping background full screen
   also, this may not be flex grow/shrink */
   height: 100%;
-  width: 100%;
+  width: 140%;
 }
 
 
@@ -16,12 +16,16 @@
 
 @media screen and (max-width: 480px) {
   .App {
+
+    border: 1px solid red;
+    border-radius: 40px;
+
     background-image: url('../../images/backgrounds/mbl_background-360x640.png');
     background-repeat: no-repeat;
     /* background-size: 100%; */
     background-attachment: fixed;  /** keep background in place while scrolling */
     background-position: center;
-    background-size: auto;
+    background-size: cover;
   }
 }
 
