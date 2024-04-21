@@ -26,11 +26,21 @@
 }
 
 
+
+.store-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+
+
+
 .swiper-boi {
     /* border: 1px solid red;
     border-radius: 40px; */
 
-    width: 40%;
+    width: 100%;
     /* height: 400px; */
 }
 
