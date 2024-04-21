@@ -25,8 +25,6 @@
     /* border: 3px solid red;
     border-radius: 40px; */
 
-    width: 111%;
-
     background-image: url('../../images/backgrounds/mbl_background-360x640.png');
     /* background-image: url('../../images/backgrounds/dsktp_background-1280x720.png'); */
     background-repeat: no-repeat;
@@ -63,8 +61,6 @@
     height: 40px;
     width: 40px;
   }
-
-
 }
 
 
