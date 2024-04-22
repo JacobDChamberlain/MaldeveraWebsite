@@ -32,6 +32,7 @@
     background-attachment: fixed;  /** keep background in place while scrolling */
     background-position: center;
     background-size: cover;
+    -webkit-background-size: cover;
   }
 
   .swiper-boi {
