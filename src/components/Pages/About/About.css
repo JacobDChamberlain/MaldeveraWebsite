@@ -35,6 +35,7 @@
 
 .individual-photo {
     width: 170px;
+    align-self: center;
 }
 
 .indivitual-photo-description {
@@ -49,4 +50,6 @@
     display: flex;
     flex-direction: column;
     padding:  10px 10%;
+    height: 320px;
+    width: 215px;
 }

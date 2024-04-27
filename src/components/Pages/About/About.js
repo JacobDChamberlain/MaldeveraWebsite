@@ -15,12 +15,12 @@ export default function About() {
             <div className='band-photo-description'>Est 2011<br />DTX / NOLA<br />"Taste the corners of your mind."</div>
             <ul className='individual-photos-ul'>
                 <li className='individual-photo-li'>
-                    <img className='individual-photo' src={ jPhoto } alt='Jacob Chamberlain'></img>
-                    <p className='indivitual-photo-description'>Jacob Chamberlain</p>
-                </li>
-                <li className='individual-photo-li'>
                     <img className='individual-photo' src={ pPhoto } alt='Parker Turney'></img>
                     <p className='indivitual-photo-description'>Parker Turney</p>
+                </li>
+                <li className='individual-photo-li'>
+                    <img className='individual-photo' src={ jPhoto } alt='Jacob Chamberlain'></img>
+                    <p className='indivitual-photo-description'>Jacob Chamberlain</p>
                 </li>
                 <li className='individual-photo-li'>
                     <img className='individual-photo' src={ sPhoto } alt='Shannon Paine-Jesam'></img>
