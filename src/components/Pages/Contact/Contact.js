@@ -4,7 +4,8 @@ import './Contact.css';
 export default function Contact() {
     return (
         <div className="contact-wrapper">
-            <span className='contact'>MaldeveraTX@gmail.com</span>
+            <h2 className='contact-page-header'>Booking:</h2>
+            <span className='contact-span'>MaldeveraTX@gmail.com</span>
         </div>
     )
 }
