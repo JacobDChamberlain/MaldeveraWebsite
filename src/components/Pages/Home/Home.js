@@ -21,7 +21,11 @@ export default function Home() {
                 <MusicVideo musicVideo={ musicVideo } />
             ))} */}
 
-            <YouTubeEmbed className='music-video-youtube-embed' embedId='kkldG6rwKF8?si=lKwV5JJKX3dArdou' />
+            <YouTubeEmbed className='music-video-youtube-embed' embedId='4ED07rhu3jg?si=Ft4T8YRWoER6YBW8' />
         </div>
     )
 }
+
+// embedIds
+// Icon Music Video: 4ED07rhu3jg?si=Ft4T8YRWoER6YBW8
+// From Man To Mist: kkldG6rwKF8?si=lKwV5JJKX3dArdou
