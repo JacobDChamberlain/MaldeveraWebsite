@@ -4,7 +4,7 @@ import './Contact.css';
 export default function Contact() {
     return (
         <div className="contact-wrapper">
-            CONTACT
+            <span className='contact'>MaldeveraTX@gmail.com</span>
         </div>
     )
 }
