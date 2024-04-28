@@ -7,7 +7,6 @@
     align-items: center;
     padding: 20px;
     flex-direction: column;
-    /* width: 100%; */
 }
 
 .nav-link {
@@ -16,11 +15,12 @@
     padding: 10px;
     font-size: 30px;
     font-weight: bold;
-    /* font-style: italic; */
 }
 
 .nav-link:hover {
     color: rgb(162, 68, 68);
+    /* border: 1px solid red;
+    margin-right: -2px; */
 }
 
 a:visited {
