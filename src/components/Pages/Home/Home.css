@@ -15,3 +15,9 @@
     padding-top: 50px;
     padding-bottom: 100px;
 }
+
+.yt-embed-wrapper {
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 1;
+}

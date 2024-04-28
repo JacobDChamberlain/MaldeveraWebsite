@@ -16,12 +16,12 @@
 
 .show-dates-ul {
     list-style: none;
-    padding: 0px;
+    padding-left: 0px;
 }
 
 .show-date-li {
-    border: 1px dotted yellow;
-    border-radius: 30px;
-    margin: 10px;
+    /* border: 1px dotted yellow;
+    border-radius: 30px; */
+    margin: 40px;
     padding: 5px;
 }

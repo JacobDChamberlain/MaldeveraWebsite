@@ -21,7 +21,7 @@ export default function StoreItem({ item }) {
                 <div className="store-item-price">
                     ${ item.price }.00
                 </div>
-                <button className='store-item-purchase-button' onClick={ () => navigate("/giveusyourmoney")}>Add To Cart 🛒</button>
+                <button className='store-item-purchase-button' onClick={ () => navigate("/giveusyourmoney")}>Add to Cart 🛒</button>
             </div>
         </div>
     )

@@ -21,7 +21,9 @@ export default function Home() {
                 <MusicVideo musicVideo={ musicVideo } />
             ))} */}
 
-            <YouTubeEmbed className='music-video-youtube-embed' embedId='4ED07rhu3jg?si=Ft4T8YRWoER6YBW8' />
+            <div className='yt-embed-wrapper'>
+                <YouTubeEmbed className='music-video-youtube-embed' embedId='4ED07rhu3jg?si=Ft4T8YRWoER6YBW8' />
+            </div>
         </div>
     )
 }
