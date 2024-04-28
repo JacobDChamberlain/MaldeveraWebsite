@@ -1,8 +1,12 @@
 .shows-wrapper {
+    /* border: 1px solid red;
+    border-radius: 20px; */
+
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    /* border-bottom: 1px solid black; */
 
     color: white;
     height: 70vh;
@@ -16,59 +20,12 @@
 }
 
 .show-date-li {
-    /* border: 1px dotted yellow; */
-    /* border-radius: 30px; */
-    /* margin: 10px;
-    padding: 5px; */
-
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    transform: translate3d(-50%, -50%, 0);
-    background-color: rgba(#000, 0.5);
-    width: 100%;
-    max-width: 600px;
+    border: 1px dotted yellow;
+    border-radius: 30px;
+    margin: 10px;
     padding: 5px;
-    border: 2px solid #b78846;
-    &:before, &:after {
-        content: "•";
-        position: absolute;
-        width: 14px;
-        height: 14px;
-        font-size: 14px;
-        color: #b78846;
-        border: 2px solid #b78846;
-        line-height: 12px;
-        top: 5px;
-        text-align: center;
-    }
-    &:before {
-        left: 5px;
-    }
-    &:after {
-        right: 5px;
-    }
-    .show-date-description {
-        position: relative;
-        border: 2px solid #b78846;
-        padding: 20px;
-        &:before, &:after {
-            content: "•";
-            position: absolute;
-            width: 14px;
-            height: 14px;
-            font-size: 14px;
-            color: #b78846;
-            border: 2px solid #b78846;
-            line-height: 12px;
-            bottom: -2px;
-            text-align: center;
-            }
-            &:before {
-            left: -2px;
-            }
-            &:after {
-            right: -2px;
-            }
-    }
+}
+
+.show-date-description {
+
 }
