@@ -1,23 +1,32 @@
 .social-media-links-ul {
+    /* border: 1px solid red; */
+
     display: flex;
     width: 100%;
 
-    padding-left: 0;
+    padding-left: 0; /* ul automatically gets 40px padding-left */
     justify-content: center;
 }
 
 .social-media-icon {
+    /* border: 1px solid red; */
+
     height: 50px;
     width: 50px;
+    border-radius: 40px;
+    object-fit: cover;
     padding: 10px;
-    border-radius: 20px;
+
+    border-radius: 40px;
 }
 
 .social-media-icon:hover {
     cursor: pointer;
     background-color: orange;
     display: flex;
-    /* add a transition animation here */
-    /* involving icons' opacity */
-    /* and maybe bouncy resize */
+    /* flex-grow: 1; */
+    /* height: 70px;
+    width: 70px; */
+    /* add some sort of animation / transition here */
+    /* experiment with flex grow / shrink */
 }
