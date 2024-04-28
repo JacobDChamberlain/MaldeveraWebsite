@@ -4,7 +4,7 @@ import './SocialMediaBar.css';
 
 import instagramLogo from '../../images/social_media-icons/icons8-instagram.svg';
 import facebookLogo from '../../images/social_media-icons/icons8-facebook.svg';
-import twitterLogo from '../../images/social_media-icons/icons8-twitter.svg';
+import xLogo from '../../images/social_media-icons/icons8-x.svg';
 import spotifyLogo from '../../images/social_media-icons/icons8-spotify.svg';
 import youtubeLogo from '../../images/social_media-icons/icons8-youtube.svg';
 import appleLogo from '../../images/social_media-icons/icons8-music.svg';
@@ -24,7 +24,7 @@ const socialMediaLinks = [
     {
         name: 'twitter',
         url: 'https://twitter.com/maldevera',
-        imagePath: twitterLogo
+        imagePath: xLogo
     },
     {
         name: 'spotify',
