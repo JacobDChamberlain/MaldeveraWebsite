@@ -15,8 +15,11 @@
 }
 
 .contact-span {
-    /* border: 1px dotted yellow;
-    border-radius: 30px; */
     margin: 10px;
     padding: 5px;
+}
+
+.contact-span:hover {
+    cursor: pointer;
+    color: rgb(162, 68, 68);
 }

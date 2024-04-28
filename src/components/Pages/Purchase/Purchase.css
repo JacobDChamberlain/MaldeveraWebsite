@@ -10,3 +10,13 @@
 
     height: 500px;
 }
+
+
+.email-link {
+    all: unset;
+}
+
+.email-link:hover {
+    cursor: pointer;
+    color: rgb(162, 68, 68);
+}
