@@ -4,23 +4,9 @@ import YouTubeEmbed from '../../YouTubeEmbed/YouTubeEmbed';
 import './Home.css';
 
 export default function Home() {
-    // const musicVideos = [
-    //     {
-    //         title: 'JUKAI MUSIC VIDEO',
-    //         description: 'TEXT ABOUT THE VIDEO, DIRECTED BY WY MAN,SHOT IN NOLA. SONG IS ABOUT ETC. SUICIDE PREVENTION HOTLINE ETC.'
-    //     },
-    //     {
-    //         title: 'ICON MUSIC VIDEO',
-    //         description: 'TEXT ABOUT THE VIDEO, DIRECTED BY WILL MECCA. SONG ABOUT DOOM 2 ETC'
-    //     }
-    // ];
 
     return (
         <div className="home-wrapper">
-            {/* { musicVideos.map( musicVideo => (
-                <MusicVideo musicVideo={ musicVideo } />
-            ))} */}
-
             <div className='yt-embed-wrapper'>
                 <YouTubeEmbed className='music-video-youtube-embed' embedId='4ED07rhu3jg?si=Ft4T8YRWoER6YBW8' />
             </div>
