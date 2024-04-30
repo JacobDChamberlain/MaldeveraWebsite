@@ -19,7 +19,7 @@
 
 
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 430px) {
   .App {
 
     /* border: 3px solid red;
@@ -34,6 +34,13 @@
     background-position: center;
     background-size: cover;
     -webkit-background-size: cover;
+    -moz-background-size: cover;
+
+    overflow-x: hidden;
+  }
+
+  .home-wrapper {
+    height: 55vh;
   }
 
   .swiper-boi {
@@ -84,7 +91,7 @@
 }
 
 
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 431px) {
   .App {
     background-image: url('../../images/backgrounds/dsktp_background-1280x720.png');
     background-repeat: no-repeat;

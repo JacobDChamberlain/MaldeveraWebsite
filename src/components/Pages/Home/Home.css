@@ -4,16 +4,16 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     color: white;
-    height: auto;
+    /* height: auto; */
     font-size: 30px;
     font-weight: bold;
 
-    padding-top: 50px;
-    padding-bottom: 100px;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
 }
 
 .yt-embed-wrapper {
