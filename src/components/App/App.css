@@ -43,6 +43,13 @@
     height: 55vh;
   }
 
+  .home-wrapper > .yt-embed-wrapper > .video-responsive > iframe {
+    width: 370px;
+    height: 250px;
+  }
+
+
+
   .swiper-boi {
     width: 80%;
   }
