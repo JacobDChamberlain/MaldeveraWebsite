@@ -3,8 +3,6 @@ import './Shows.css';
 
 import may28th from './Flyers/may28thDWshow.jpg';
 import may31st from './Flyers/may31RGshow.png';
-import fryBroke from './Flyers/frybroke.webp';
-import maldeLogo from './Flyers/maldevera_logo.webp';
 import fm2m from './Flyers/from-man2mist-version2.png';
 
 export default function Shows() {
