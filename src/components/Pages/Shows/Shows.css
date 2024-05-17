@@ -34,8 +34,13 @@
     width: 235px;
     margin: 30px;
 }
+.show-flyer-0 {
+    height: auto;
+    width: 235px;
+    margin: 30px;
+}
 
 .show-description {
     margin: 30px;
-    width: 300px;
+    width: 350px;
 }
