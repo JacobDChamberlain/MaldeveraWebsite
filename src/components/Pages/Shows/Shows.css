@@ -9,7 +9,6 @@
     /* border-bottom: 1px solid black; */
 
     color: white;
-    height: 70vh;
     font-size: 30px;
     font-weight: bold;
 }
@@ -17,6 +16,7 @@
 .show-dates-ul {
     list-style: none;
     padding-left: 0px;
+    width: 80%;
 }
 
 .show-date-li {
@@ -24,4 +24,18 @@
     border-radius: 30px; */
     margin: 10px;
     padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-flyer {
+    height: 300px;
+    width: 235px;
+    margin: 30px;
+}
+
+.show-description {
+    margin: 30px;
+    width: 300px;
 }
