@@ -23,6 +23,17 @@
     padding: 5px;
 }
 
+.bandcamp-link {
+    text-decoration: none;
+}
+.bandcamp-link:visited {
+    text-decoration: none;
+}
+.bandcamp-link:hover {
+    cursor: pointer;
+    color: rgb(162, 68, 68);
+}
+
 .individual-photos-ul {
     display: flex;
     flex-wrap: wrap;
