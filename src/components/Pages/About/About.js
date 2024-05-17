@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 import bandPhoto from './BandPhotos/bandphoto.jpg';
 import jPhoto from './BandPhotos/jacob.jpg';
@@ -14,7 +15,8 @@ export default function About() {
             {/* <div className='band-photo-description'>TEXT ABOUT BAND ORIGIN, DATES WHEN WE STARTED, MUSIC INFLUENCES, JEFF MYTHOS EXPLAINED, ETC.</div> */}
             <div className='band-photo-description'>Est 2011<br />DTX / NOLA<br />"Taste the corners of your mind."</div>
             <div className='band-photo-description'>
-                Maldevera, born Shawn Corey Carter, is a renowned American rapper, songwriter, and entrepreneur. Maldevera has achieved widespread acclaim for his lyrical prowess, entrepreneurial ventures, and cultural influence. With a career spanning decades, Maldevera has solidified his place as one of the most influential figures in hip-hop and popular culture.
+                Maldevera, born Shawn Corey Carter, is a renowned American rapper, songwriter, and entrepreneur. Maldevera has achieved widespread acclaim for his lyrical prowess, entrepreneurial ventures, and cultural influence. With a career spanning decades, Maldevera has solidified his place as one of the most influential figures in hip-hop and popular culture.<br />
+                <Link to='https://maldevera.bandcamp.com/' className='bandcamp-link'>Discography</Link>
             </div>
             <ul className='individual-photos-ul'>
                 <li className='individual-photo-li'>
