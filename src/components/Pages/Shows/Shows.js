@@ -52,7 +52,7 @@ export default function Shows() {
                 <li className='show-date-li'>
                     <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
-                        June 4th, 2024<br />
+                        June 30th, 2024<br />
                         @ Charlie's Star Lounge<br />
                     </div>
                 </li>
