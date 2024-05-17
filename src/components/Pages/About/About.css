@@ -23,11 +23,9 @@
     padding: 5px;
 }
 
-.bandcamp-link {
+.bandcamp-link, .bandcamp-link:visited {
     text-decoration: none;
-}
-.bandcamp-link:visited {
-    text-decoration: none;
+    color: white;
 }
 .bandcamp-link:hover {
     cursor: pointer;
