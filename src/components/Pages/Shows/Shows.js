@@ -3,6 +3,7 @@ import './Shows.css';
 
 import may28th from './Flyers/may28thDWshow.jpg';
 import may31st from './Flyers/may31RGshow.png';
+import june22nd from './Flyers/june22ndDWshow.jpg'
 import fm2m from './Flyers/from-man2mist-version2.png';
 
 export default function Shows() {
@@ -15,7 +16,7 @@ export default function Shows() {
                     <div className='show-description'>
                         May 28th, 2024<br />
                         @ DoubleWide<br />
-                        w/ ASCENDED DEAD
+                        w/ ASCENDED DEAD, COGNIZANT, PSYCHIATRIC REGURGITATION
                     </div>
                 </li>
                 <li className='show-date-li'>
@@ -23,7 +24,7 @@ export default function Shows() {
                     <div className='show-description'>
                         May 31st, 2024<br />
                         @ Rubber Gloves<br />
-                        w/ HERAKLEION
+                        w/ HERAKLEION, MORGUE MEAT,<br />KUDU
                     </div>
                 </li>
                 <li className='show-date-li'>
@@ -34,10 +35,11 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_22nd_2024_at_DoubleWide'></img>
+                    <img className='show-flyer' src={ june22nd } alt='june_22nd_2024_at_DoubleWide'></img>
                     <div className='show-description'>
                         June 22nd, 2024<br />
                         @ DoubleWide<br />
+                        w/ SPITER,<br />DESOLUS,<br />NOCTURNAL WOLF, HOFAKER
                     </div>
                 </li>
                 <li className='show-date-li'>
