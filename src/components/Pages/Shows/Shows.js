@@ -4,6 +4,8 @@ import './Shows.css';
 import may28th from './Flyers/may28thDWshow.jpg';
 import may31st from './Flyers/may31RGshow.png';
 import june22nd from './Flyers/june22ndDWshow.jpg'
+import june27th from './Flyers/june27th.PNG';
+import august16h from './Flyers/august16th.jpg';
 import fm2m from './Flyers/from-man2mist-version2.png';
 
 export default function Shows() {
@@ -43,10 +45,11 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_27th_2024_at_RubberGloves'></img>
+                    <img className='show-flyer-0' src={ june27th } alt='june_27th_2024_at_RubberGloves'></img>
                     <div className='show-description'>
                         June 27th, 2024<br />
-                        @ Rubber Gloves<br />
+                        @ Haltom Theater<br />
+                        w/ VOID,<br />ODIOUS,<br />KUDU
                     </div>
                 </li>
                 <li className='show-date-li'>
@@ -54,6 +57,16 @@ export default function Shows() {
                     <div className='show-description'>
                         June 30th, 2024<br />
                         @ Charlie's Star Lounge<br />
+                    </div>
+                </li>
+                <li className='show-date-li'>
+                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <div className='show-description'>
+                        August 16th, 2024<br />
+                        @ DoubleWide<br />
+                        w/ OXYGEN DESTROYER,<br />
+                        MORGUE MEAT,<br />
+                        ODIOUS
                     </div>
                 </li>
             </ul>
