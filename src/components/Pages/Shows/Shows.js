@@ -49,7 +49,7 @@ export default function Shows() {
                     <div className='show-description'>
                         June 27th, 2024<br />
                         @ Haltom Theater<br />
-                        w/ VOID,<br />ODIOUS,<br />KUDU
+                        w/ DISTAIN,<br />VOID,<br />ODIOUS,<br />KUDU
                     </div>
                 </li>
                 <li className='show-date-li'>
