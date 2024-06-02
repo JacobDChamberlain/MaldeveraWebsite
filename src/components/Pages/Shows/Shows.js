@@ -34,6 +34,7 @@ export default function Shows() {
                     <div className='show-description'>
                         June 4th, 2024<br />
                         @ Sunshine Bar<br />
+                        w/ VIOGRESSION
                     </div>
                 </li>
                 <li className='show-date-li'>
