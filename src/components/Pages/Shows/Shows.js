@@ -3,6 +3,7 @@ import './Shows.css';
 
 import may28th from './Flyers/may28thDWshow.jpg';
 import may31st from './Flyers/may31RGshow.png';
+import june4th from './Flyers/june4thSunshineBar.jpg'
 import june22nd from './Flyers/june22ndDWshow.jpg'
 import june27th from './Flyers/june27th.PNG';
 import august16h from './Flyers/august16th.jpg';
@@ -30,11 +31,11 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_4th_2024_at_SunshineBar'></img>
+                    <img className='show-flyer-0' src={ june4th } alt='june_4th_2024_at_SunshineBar'></img>
                     <div className='show-description'>
                         June 4th, 2024<br />
                         @ Sunshine Bar<br />
-                        w/ VIOGRESSION
+                        w/ VIOGRESSION,<br />YOTUMA
                     </div>
                 </li>
                 <li className='show-date-li'>
