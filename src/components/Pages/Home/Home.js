@@ -1,5 +1,4 @@
 import React from 'react';
-// import MusicVideo from './MusicVideo/MusicVideo';
 import YouTubeEmbed from '../../YouTubeEmbed/YouTubeEmbed';
 import './Home.css';
 
@@ -9,8 +8,8 @@ export default function Home() {
         <div className="home-wrapper">
             <div className='yt-embed-wrapper'>
                 <YouTubeEmbed className='music-video-youtube-embed' embedId='Lq7NMF8ZXJg?si=EMYYbxr63aFeqDZ6' />
-                {/* <YouTubeEmbed className='music-video-youtube-embed' embedId='4ED07rhu3jg?si=Ft4T8YRWoER6YBW8' />
-                <YouTubeEmbed className='music-video-youtube-embed' embedId='kkldG6rwKF8?si=lKwV5JJKX3dArdou' /> */}
+                <YouTubeEmbed className='music-video-youtube-embed' embedId='4ED07rhu3jg?si=Ft4T8YRWoER6YBW8' />
+                {/* <YouTubeEmbed className='music-video-youtube-embed' embedId='kkldG6rwKF8?si=lKwV5JJKX3dArdou' /> */}
             </div>
         </div>
     )
