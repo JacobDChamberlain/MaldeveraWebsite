@@ -6,6 +6,7 @@ import may31st from './Flyers/may31RGshow.png';
 import june4th from './Flyers/june4thSunshineBar.jpg'
 import june22nd from './Flyers/june22ndDWshow.jpg'
 import june27th from './Flyers/june27th.PNG';
+import june30th from './Flyers/june30thCharliesShow.PNG';
 import august16h from './Flyers/august16th.jpg';
 import fm2m from './Flyers/from-man2mist-version2.png';
 
@@ -55,7 +56,7 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <img className='show-flyer-0' src={ june30th } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         June 30th, 2024<br />
                         @ Charlie's Star Lounge<br />
