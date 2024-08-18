@@ -68,8 +68,7 @@ export default function Shows() {
                         August 16th, 2024<br />
                         @ DoubleWide<br />
                         w/ OXYGEN DESTROYER,<br />
-                        MORGUE MEAT,<br />
-                        ODIOUS
+                        MORGUE MEAT
                     </div>
                 </li>
             </ul>
