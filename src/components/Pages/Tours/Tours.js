@@ -22,7 +22,7 @@ export default function Tours() {
                             <li className="tour-li">11/10   Oakland, CA</li>
                             <li className="tour-li">11/12   Los Angeles, CA</li>
                             <li className="tour-li">11/14   Anaheim, CA</li>
-                            <li className="tour-li">11/15   Los Vegas, NV</li>
+                            <li className="tour-li">11/15   Las Vegas, NV</li>
                             <li className="tour-li">11/16   Phoenix, AZ</li>
                             <li className="tour-li">11/17   El Paso, TX</li>
                         </ul>
