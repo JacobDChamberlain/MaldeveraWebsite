@@ -14,6 +14,7 @@ export default function Shows() {
     return (
         <div className="shows-wrapper">
             <h2 className='shows-page-header'>Upcoming Shows:</h2>
+            <h4 className='shows-page-header'>(click or tap the venue name for directions)</h4>
             <ul className='show-dates-ul'>
                 <li className='show-date-li'>
                     <img className='show-flyer' src={ may28th } alt='may_28th_2024_at_DoubleWide'></img>
