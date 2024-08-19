@@ -184,7 +184,7 @@ export default function Shows() {
                 <li className='show-date-li'>
                     <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
-                        October 1st, 2024<br />
+                        October 13th, 2024<br />
                         @ <a
                             href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('3510 Commerce St, Dallas, TX')}`}
                             target='_blank'
