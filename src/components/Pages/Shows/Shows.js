@@ -72,7 +72,7 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         September 13th, 2024<br />
                         @ Rubber Gloves<br />
@@ -80,7 +80,7 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         September 14th, 2024<br />
                         @ Growl Records<br />
@@ -88,7 +88,7 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         September 27th, 2024<br />
                         @ Zounds B-Side<br />
@@ -96,7 +96,7 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         October 1st, 2024<br />
                         @ TBD<br />
@@ -104,7 +104,7 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         October 1st, 2024<br />
                         @ DoubleWide<br />
@@ -112,7 +112,7 @@ export default function Shows() {
                     </div>
                 </li>
                 <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         December 7th, 2024<br />
                         @ Reno's<br />
