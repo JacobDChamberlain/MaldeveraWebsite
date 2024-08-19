@@ -106,7 +106,7 @@ export default function Shows() {
                 <li className='show-date-li'>
                     <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
-                        October 1st, 2024<br />
+                        October 13th, 2024<br />
                         @ DoubleWide<br />
                         w/ CIVIL SERPENTS
                     </div>
