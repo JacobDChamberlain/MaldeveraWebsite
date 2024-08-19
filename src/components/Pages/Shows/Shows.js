@@ -115,7 +115,7 @@ export default function Shows() {
                     <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         December 7th, 2024<br />
-                        @ Reno's<br />
+                        @ Reno's Chop Shop<br />
                         FESTIVAL
                     </div>
                 </li>
