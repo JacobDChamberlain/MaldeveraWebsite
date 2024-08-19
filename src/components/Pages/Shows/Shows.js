@@ -67,7 +67,7 @@ export default function Shows() {
                     <div className='show-description'>
                         August 16th, 2024<br />
                         @ DoubleWide<br />
-                        w/ OXYGEN DESTROYER (Seattle),<br />
+                        w/ OXYGEN DESTROYER,<br />
                         MORGUE MEAT
                     </div>
                 </li>
@@ -108,7 +108,7 @@ export default function Shows() {
                     <div className='show-description'>
                         October 1st, 2024<br />
                         @ DoubleWide<br />
-                        w/ CIVIL SERPENTS (El Paso)
+                        w/ CIVIL SERPENTS
                     </div>
                 </li>
                 <li className='show-date-li'>

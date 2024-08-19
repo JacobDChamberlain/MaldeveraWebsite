@@ -7,6 +7,7 @@ export default function NavBar() {
         <div className="navbar-wrapper">
             <div className='navigation-links'>
                 <NavLink className="nav-link" to="/" >HOME</NavLink>
+                <NavLink className="nav-link" to='/tours'>TOUR</NavLink>
                 <NavLink className="nav-link" to='/merch'>MERCH</NavLink>
                 <NavLink className="nav-link" to='/about'>ABOUT</NavLink>
                 <NavLink className="nav-link" to='/shows'>SHOWS</NavLink>

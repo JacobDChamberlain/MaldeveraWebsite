@@ -1,0 +1,33 @@
+.tours-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tour-li {
+    list-style: none;
+}
+
+.outer-border {
+    border: 2px solid #DE9B72;
+    padding: 6px;
+    margin: 0 auto;
+    position: relative; /* Add this */
+}
+
+.mid-border {
+    border: 6px solid #DE9B72;
+    padding: 6px;
+    margin: auto;
+}
+
+.inner-border {
+    border: 2px solid #DE9B72;
+    padding: 6px;
+    margin: auto;
+}
