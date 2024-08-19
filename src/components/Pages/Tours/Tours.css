@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
     color: white;
     font-size: 30px;
     font-weight: bold;
+    padding: 20px; /* Add padding to prevent content from touching the edges */
 }
 
 .tour-li {
@@ -16,18 +16,27 @@
 .outer-border {
     border: 2px solid #DE9B72;
     padding: 6px;
+    width: 90%; /* Adjust width for mobile responsiveness */
+    max-width: 1200px; /* Ensure it doesn't grow too large on bigger screens */
     margin: 0 auto;
-    position: relative; /* Add this */
+    position: relative;
 }
 
 .mid-border {
     border: 6px solid #DE9B72;
     padding: 6px;
-    margin: auto;
+    width: 100%; /* Full width of the outer border */
 }
 
 .inner-border {
     border: 2px solid #DE9B72;
     padding: 6px;
-    margin: auto;
+    width: 100%; /* Full width of the mid border */
+}
+
+/* Decorations */
+.vertical-decoration {
+    width: 80%; /* Responsive width */
+    max-width: 300px; /* Limit maximum size */
+    margin: 10px auto; /* Center vertically */
 }
