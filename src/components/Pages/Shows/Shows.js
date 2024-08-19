@@ -115,7 +115,13 @@ export default function Shows() {
                     <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
                         December 7th, 2024<br />
-                        @ Reno's Chop Shop<br />
+                        @ <a
+                            href={`https://www.google.com/maps/dir/api?=1&destination=${encodeURIComponent('210 N Crowdus St, Dallas, TX 75226')}`}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                        >
+                            Reno's Chop Shop
+                        </a><br />
                         FESTIVAL
                     </div>
                 </li>
