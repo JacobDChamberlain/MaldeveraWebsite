@@ -67,8 +67,56 @@ export default function Shows() {
                     <div className='show-description'>
                         August 16th, 2024<br />
                         @ DoubleWide<br />
-                        w/ OXYGEN DESTROYER,<br />
+                        w/ OXYGEN DESTROYER (Seattle),<br />
                         MORGUE MEAT
+                    </div>
+                </li>
+                <li className='show-date-li'>
+                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <div className='show-description'>
+                        September 13th, 2024<br />
+                        @ Rubber Gloves<br />
+                        w/ PRIMAL TYRANT
+                    </div>
+                </li>
+                <li className='show-date-li'>
+                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <div className='show-description'>
+                        September 14th, 2024<br />
+                        @ Growl Records<br />
+                        FESTIVAL
+                    </div>
+                </li>
+                <li className='show-date-li'>
+                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <div className='show-description'>
+                        September 27th, 2024<br />
+                        @ Zounds B-Side<br />
+                        FESTIVAL
+                    </div>
+                </li>
+                <li className='show-date-li'>
+                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <div className='show-description'>
+                        October 1st, 2024<br />
+                        @ TBD<br />
+                        w/ YOTUMA
+                    </div>
+                </li>
+                <li className='show-date-li'>
+                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <div className='show-description'>
+                        October 1st, 2024<br />
+                        @ DoubleWide<br />
+                        w/ CIVIL SERPENTS (El Paso)
+                    </div>
+                </li>
+                <li className='show-date-li'>
+                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
+                    <div className='show-description'>
+                        December 7th, 2024<br />
+                        @ Reno's<br />
+                        FESTIVAL
                     </div>
                 </li>
             </ul>
