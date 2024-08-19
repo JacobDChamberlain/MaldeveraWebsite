@@ -21,10 +21,10 @@ export default function Tours() {
                             <li className="tour-li">11/9    Eureka, CA</li>
                             <li className="tour-li">11/10   Oakland, CA</li>
                             <li className="tour-li">11/12   Los Angeles, CA</li>
-                            <li className="tour-li">11/14   Anaheim, CA</li>
-                            <li className="tour-li">11/15   Las Vegas, NV</li>
-                            <li className="tour-li">11/16   Phoenix, AZ</li>
-                            <li className="tour-li">11/17   El Paso, TX</li>
+                            <li className="tour-li">11/13   Anaheim, CA</li>
+                            <li className="tour-li">11/14   Las Vegas, NV</li>
+                            <li className="tour-li">11/15   Phoenix, AZ</li>
+                            <li className="tour-li">11/16   El Paso, TX</li>
                         </ul>
                         <img className="vertical-decoration bottom" src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png" alt="vertical decoration" />
                     </div>
