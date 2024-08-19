@@ -44,3 +44,16 @@
     margin: 30px;
     width: 350px;
 }
+
+.venue-map-link {
+    text-decoration: none;
+    color: white;
+}
+
+.venue-map-link:visited {
+    text-decoration: none;
+    color: white;
+}
+.venue-map-link:hover {
+    color: lime
+}
