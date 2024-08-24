@@ -6,7 +6,7 @@
     color: white;
     font-size: 25px;
     font-weight: bold;
-    padding: 20px; /* Add padding to prevent content from touching the edges */
+    padding: 20px; /* Padding to prevent content from touching the edges */
 }
 
 .tour-list {
@@ -22,21 +22,24 @@
     border: 2px solid #DE9B72;
     padding: 6px;
     width: 90%; /* Adjust width for mobile responsiveness */
-    max-width: 1200px; /* Ensure it doesn't grow too large on bigger screens */
+    max-width: 1200px; /* Prevent growing too large on big screens */
     margin: 0 auto;
     position: relative;
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .mid-border {
     border: 6px solid #DE9B72;
     padding: 6px;
-    width: 100%; /* Full width of the outer border */
+    width: 100%; /* Full width within the outer border */
+    box-sizing: border-box; /* Include padding and border in the width */
 }
 
 .inner-border {
     border: 2px solid #DE9B72;
     padding: 6px;
-    width: 100%; /* Full width of the mid border */
+    width: 100%; /* Full width within the mid border */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 /* Decorations */
@@ -45,3 +48,5 @@
     max-width: 300px; /* Limit maximum size */
     margin: 10px auto; /* Center vertically */
 }
+
+/* these are chatGPT 4o comments, js, but hey it worked. leaving for reference. */
