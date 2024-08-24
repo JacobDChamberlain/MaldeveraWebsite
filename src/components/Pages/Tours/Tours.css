@@ -49,4 +49,9 @@
     margin: 10px auto; /* Center vertically */
 }
 
+.vertical-decoration.bottom {
+    transform: rotate(180deg); /* Flip the graphic upside-down */
+}
+
+
 /* these are chatGPT 4o comments, js, but hey it worked. leaving for reference. */
