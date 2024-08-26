@@ -124,21 +124,6 @@ export default function Shows() {
                 <li className='show-date-li'>
                     <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
                     <div className='show-description'>
-                        September 13th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('411 E Sycamore St, Denton, TX 76205')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Rubber Gloves
-                        </a><br />
-                        w/ PRIMAL TYRANT
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
                         September 14th, 2024<br />
                         @ <a
                             href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('09 E Abram St, Arlington, TX 76010')}`}
@@ -164,21 +149,6 @@ export default function Shows() {
                             Zounds B-Side
                         </a><br />
                         FESTIVAL
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
-                        October 1st, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('Area 51')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            TBD
-                        </a><br />
-                        w/ YOTUMA
                     </div>
                 </li>
                 <li className='show-date-li'>
