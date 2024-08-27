@@ -1,4 +1,5 @@
 import React from 'react';
+import Show from './Show/Show';
 import './Shows.css';
 
 import may28th from './Flyers/may28thDWshow.jpg';
@@ -12,176 +13,33 @@ import sept14th from './Flyers/growlRecordsShowFlyer.jpeg'
 import fm2m from './Flyers/from-man2mist-version2.png';
 
 export default function Shows() {
+
+    //* ADD BAND LIST TO EACH SHOW. bands: [Oxygen Destroyer, Morgue Meat, Psychiatric Regurgitation']
+    //* then in description div, bands.forEach(bandName => bandName.ToUpper ) etc, to populate list
+    //? have last band be preceded by '&'
+
+    const shows = [
+        { flyer: '.'+may28th, alt: 'may_28th_2024_DoubleWide', date: 'May 28th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Ascended Dead', 'Cognizant', 'Psychiatric Regurgitation'] },
+        { flyer: '.'+may31st, alt: 'may_31st_2024_RubberGloves', date: 'May 31st, 2024', venue: 'Rubber Gloves', address: '411 E Sycamore St, Denton, TX 76205', bands: ['HERAKLEION', 'Morgue Meat', 'Kudu'] },
+        { flyer: '.'+june4th, alt: 'june_4th_2024_SunshineBar', date: 'June 4th, 2024', venue: 'Sunshine Bar', address: '902 W Division St, Arlington, TX 76012', bands: ['Viogression', 'Yotuma'] },
+        { flyer: '.'+june22nd, alt: 'june_22nd_2024_DoubleWide', date: 'June 22nd, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Spiter', 'Desolus', 'Nocturnal Wolf', 'Hofaker'] },
+        { flyer: '.'+june27th, alt: 'june_27th_2024_HaltomTheater', date: 'June 27th, 2024', venue: 'Haltom Theater', address: '5601 E Belknap St, Haltom City, TX 76117', bands: ['Distain', 'Void', 'Odius', 'Kudu'] },
+        { flyer: '.'+june30th, alt: 'june_30th_2024_CharliesStarLounge', date: 'June 30th, 2024', venue: 'Charlie\'s Star Lounge', address: '4319 Main St, Dallas, TX 75226', bands: ['Festival'] },
+        { flyer: '.'+august16h, alt: 'august_16th_2024_DoubleWide', date: 'August 16th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Oxygen Destroyer', 'Morgue Meat'] },
+        { flyer: '.'+sept14th, alt: 'sept_14th_2024_GrowlRecords', date: 'September 14th, 2024', venue: 'Growl Records', address: '09 E Abram St, Arlington, TX 76010', bands: ['Festival'] },
+        { flyer: '.'+fm2m, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['Festival'] },
+        { flyer: '.'+fm2m, alt: 'october_13th_2024_DoubleWide', date: 'October 13th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Civil Serpents'] },
+        { flyer: '.'+fm2m, alt: 'december_7th_2024_RenosChopShop', date: 'December 7th, 2024', venue: 'Reno\'s Chop Shop', address: '210 N Crowdus St, Dallas, TX 75226', bands: ['Festival'] }
+    ];
+
     return (
         <div className="shows-wrapper">
             <h2 className='shows-page-header'>Upcoming Shows:</h2>
             <h4 className='shows-page-header'>(click or tap the venue name for directions)</h4>
             <ul className='show-dates-ul'>
-                <li className='show-date-li'>
-                    <img className='show-flyer' src={ may28th } alt='may_28th_2024_at_DoubleWide'></img>
-                    <div className='show-description'>
-                        May 28th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('3510 Commerce St, Dallas, TX')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            DoubleWide
-                        </a><br />
-                        w/ ASCENDED DEAD, COGNIZANT, PSYCHIATRIC REGURGITATION
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer' src={ may31st } alt='may_31st_2024_at_RubberGloves'></img>
-                    <div className='show-description'>
-                        May 31st, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('411 E Sycamore St, Denton, TX 76205')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Rubber Gloves
-                        </a><br />
-                        w/ HERAKLEION, MORGUE MEAT,<br />KUDU
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ june4th } alt='june_4th_2024_at_SunshineBar'></img>
-                    <div className='show-description'>
-                        June 4th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('902 W Division St, Arlington, TX 76012')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Sunshine Bar
-                        </a><br />
-                        w/ VIOGRESSION,<br />YOTUMA
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer' src={ june22nd } alt='june_22nd_2024_at_DoubleWide'></img>
-                    <div className='show-description'>
-                        June 22nd, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('3510 Commerce St, Dallas, TX')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            DoubleWide
-                        </a><br />
-                        w/ SPITER,<br />DESOLUS,<br />NOCTURNAL WOLF, HOFAKER
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ june27th } alt='june_27th_2024_at_RubberGloves'></img>
-                    <div className='show-description'>
-                        June 27th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('5601 E Belknap St, Haltom City, TX 76117')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Haltom Theater
-                        </a><br />
-                        w/ DISTAIN,<br />VOID,<br />ODIOUS,<br />KUDU
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ june30th } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
-                        June 30th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('4319 Main St, Dallas, TX 75226')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Charlie's Star Lounge
-                        </a><br />
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ august16h } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
-                        August 16th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('3510 Commerce St, Dallas, TX')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            DoubleWide
-                        </a><br />
-                        w/ OXYGEN DESTROYER,<br />
-                        MORGUE MEAT
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ sept14th } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
-                        September 14th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('09 E Abram St, Arlington, TX 76010')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Growl Records
-                        </a><br />
-                        FESTIVAL
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
-                        September 27th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('10050 Shoreview Rd, Dallas, TX 75238')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Zounds B-Side
-                        </a><br />
-                        FESTIVAL
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
-                        October 13th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('3510 Commerce St, Dallas, TX')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            DoubleWide
-                        </a><br />
-                        w/ CIVIL SERPENTS
-                    </div>
-                </li>
-                <li className='show-date-li'>
-                    <img className='show-flyer-0' src={ fm2m } alt='june_30th_2024_at_CharliesStarLounge'></img>
-                    <div className='show-description'>
-                        December 7th, 2024<br />
-                        @ <a
-                            href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent('210 N Crowdus St, Dallas, TX 75226')}`}
-                            target='_blank'
-                            rel='noopener noreferrer'
-                            className='venue-map-link'
-                        >
-                            Reno's Chop Shop
-                        </a><br />
-                        FESTIVAL
-                    </div>
-                </li>
+                {shows.map((show, idx) => (
+                    <Show show={show} idx={idx} />
+                ))}
             </ul>
         </div>
     )
