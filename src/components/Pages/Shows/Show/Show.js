@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import ReactModal from 'react-modal';
-
 import './Show.css';
 
 
 export default function Show({idx, show}) {
     const [isOpen, setIsOpen] = useState(false);
+
     const toggleModal = (src) => {
         console.log(`modal is open: ${isOpen}`)
         console.log(`image source: ${src}`)

@@ -19,17 +19,17 @@ export default function Shows() {
     //? have last band be preceded by '&'
 
     const shows = [
-        { flyer: '.'+may28th, alt: 'may_28th_2024_DoubleWide', venue: 'DoubleWide', bands: ['Ascended Dead', 'Cognizant', 'Psychiatric Regurgitation'] },
-        { flyer: '.'+may31st, alt: 'may_31st_2024_RubberGloves', venue: 'Rubber Gloves', bands: ['HERAKLEION', 'Morgue Meat', 'Kudu'] },
-        { flyer: '.'+june4th, alt: 'june_4th_2024_SunshineBar', venue: 'Sunshine Bar', bands: ['Viogression', 'Yotuma'] },
-        { flyer: '.'+june22nd, alt: 'june_22nd_2024_DoubleWide', venue: 'DoubleWide', bands: ['Spiter', 'Desolus', 'Nocturnal Wolf', 'Hofaker'] },
-        { flyer: '.'+june27th, alt: 'june_27th_2024_HaltomTheater', venue: 'Haltom Theater', bands: ['Distain', 'Void', 'Odius', 'Kudu'] },
-        { flyer: '.'+june30th, alt: 'june_30th_2024_CharliesStarLounge', venue: 'Charlie\'s Star Lounge', bands: [] },
-        { flyer: '.'+august16h, alt: 'august_16th_2024_DoubleWide', venue: 'DoubleWide', bands: ['Oxygen Destroyer', 'Morgue Meat'] },
-        { flyer: '.'+sept14th, alt: 'sept_14th_2024_GrowlRecords', venue: 'Growl Records', bands: ['Festival'] },
-        { flyer: '.'+fm2m, alt: 'sept_27th_2024_ZoundsBSide', venue: 'Zounds B-Side', bands: ['Festival'] },
-        { flyer: '.'+fm2m, alt: 'october_13th_2024_DoubleWide', venue: 'DoubleWide', bands: ['Civil Serpents'] },
-        { flyer: '.'+fm2m, alt: 'december_7th_2024_RenosChopShop', venue: 'Reno\'s Chop Shop', bands: ['Festival'] }
+        { flyer: '.'+may28th, alt: 'may_28th_2024_DoubleWide', date: 'May 28th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Ascended Dead', 'Cognizant', 'Psychiatric Regurgitation'] },
+        { flyer: '.'+may31st, alt: 'may_31st_2024_RubberGloves', date: 'May 31st, 2024', venue: 'Rubber Gloves', address: '411 E Sycamore St, Denton, TX 76205', bands: ['HERAKLEION', 'Morgue Meat', 'Kudu'] },
+        { flyer: '.'+june4th, alt: 'june_4th_2024_SunshineBar', date: 'June 4th, 2024', venue: 'Sunshine Bar', address: '902 W Division St, Arlington, TX 76012', bands: ['Viogression', 'Yotuma'] },
+        { flyer: '.'+june22nd, alt: 'june_22nd_2024_DoubleWide', date: 'June 22nd, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Spiter', 'Desolus', 'Nocturnal Wolf', 'Hofaker'] },
+        { flyer: '.'+june27th, alt: 'june_27th_2024_HaltomTheater', date: 'June 27th, 2024', venue: 'Haltom Theater', address: '5601 E Belknap St, Haltom City, TX 76117', bands: ['Distain', 'Void', 'Odius', 'Kudu'] },
+        { flyer: '.'+june30th, alt: 'june_30th_2024_CharliesStarLounge', date: 'June 30th, 2024', venue: 'Charlie\'s Star Lounge', address: '4319 Main St, Dallas, TX 75226', bands: [] },
+        { flyer: '.'+august16h, alt: 'august_16th_2024_DoubleWide', date: 'August 16th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Oxygen Destroyer', 'Morgue Meat'] },
+        { flyer: '.'+sept14th, alt: 'sept_14th_2024_GrowlRecords', date: 'September 14th, 2024', venue: 'Growl Records', address: '09 E Abram St, Arlington, TX 76010', bands: ['Festival'] },
+        { flyer: '.'+fm2m, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['Festival'] },
+        { flyer: '.'+fm2m, alt: 'october_13th_2024_DoubleWide', date: 'October 13th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Civil Serpents'] },
+        { flyer: '.'+fm2m, alt: 'december_7th_2024_RenosChopShop', date: 'December 7th, 2024', venue: 'Reno\'s Chop Shop', address: '210 N Crowdus St, Dallas, TX 75226', bands: ['Festival'] }
     ];
 
     return (
