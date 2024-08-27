@@ -9,6 +9,8 @@
     max-width: 90vw;
     max-height: 90vh;
     outline: none;
+
+    border: 2px solid red;
   }
 
   .modal-flyer-image {
