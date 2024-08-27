@@ -21,7 +21,24 @@ export default function Show({idx, show}) {
                 onClick={() => toggleModal(show.flyer)}
             />
             {/* bands go here (create component and pass in)*/}
-            <div>placeholder text BAND LIST</div>
+            <div className="show-description">
+                {show.date}<br />
+                @ <a
+                    href={`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(show.address)}`}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='venue-map-link'
+                >
+                    {show.venue}
+                </a><br />
+                {show.bands.map((band, idx) => (
+                    <div key={idx}>{
+                        idx === 0 && band.toUpperCase() !== 'FESTIVAL'
+                            ? 'w/ ' + band.toUpperCase()
+                            : band.toUpperCase()
+                    }</div>
+                ))}
+            </div>
             <ReactModal
                 isOpen={isOpen}
                 onRequestClose={toggleModal}

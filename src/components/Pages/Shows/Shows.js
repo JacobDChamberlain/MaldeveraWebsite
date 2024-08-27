@@ -24,7 +24,7 @@ export default function Shows() {
         { flyer: '.'+june4th, alt: 'june_4th_2024_SunshineBar', date: 'June 4th, 2024', venue: 'Sunshine Bar', address: '902 W Division St, Arlington, TX 76012', bands: ['Viogression', 'Yotuma'] },
         { flyer: '.'+june22nd, alt: 'june_22nd_2024_DoubleWide', date: 'June 22nd, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Spiter', 'Desolus', 'Nocturnal Wolf', 'Hofaker'] },
         { flyer: '.'+june27th, alt: 'june_27th_2024_HaltomTheater', date: 'June 27th, 2024', venue: 'Haltom Theater', address: '5601 E Belknap St, Haltom City, TX 76117', bands: ['Distain', 'Void', 'Odius', 'Kudu'] },
-        { flyer: '.'+june30th, alt: 'june_30th_2024_CharliesStarLounge', date: 'June 30th, 2024', venue: 'Charlie\'s Star Lounge', address: '4319 Main St, Dallas, TX 75226', bands: [] },
+        { flyer: '.'+june30th, alt: 'june_30th_2024_CharliesStarLounge', date: 'June 30th, 2024', venue: 'Charlie\'s Star Lounge', address: '4319 Main St, Dallas, TX 75226', bands: ['Festival'] },
         { flyer: '.'+august16h, alt: 'august_16th_2024_DoubleWide', date: 'August 16th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Oxygen Destroyer', 'Morgue Meat'] },
         { flyer: '.'+sept14th, alt: 'sept_14th_2024_GrowlRecords', date: 'September 14th, 2024', venue: 'Growl Records', address: '09 E Abram St, Arlington, TX 76010', bands: ['Festival'] },
         { flyer: '.'+fm2m, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['Festival'] },
