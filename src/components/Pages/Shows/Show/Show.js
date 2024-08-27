@@ -15,7 +15,7 @@ export default function Show({idx, show}) {
     return (
         <li key={idx} className='show-date-li'>
             <img
-                className='show-flyer'
+                className='show-flyer-0'
                 src={show.flyer}
                 alt={show.alt}
                 onClick={() => toggleModal(show.flyer)}
@@ -28,8 +28,13 @@ export default function Show({idx, show}) {
                 className='flyer-modal'
                 overlayClassName='flyer-overlay'
             >
-                <button className="close-modal-button" onClick={toggleModal}>Close</button>
-                <img src={show.flyer} alt='fullscreen flyer' className='modal-flyer-image' />
+                {/* <button className="close-modal-button" onClick={toggleModal}>Close</button> */}
+                <img
+                    src={show.flyer}
+                    alt='fullscreen flyer'
+                    className='modal-flyer-image'
+                    onClick={toggleModal}
+                />
             </ReactModal>
         </li>
     )
