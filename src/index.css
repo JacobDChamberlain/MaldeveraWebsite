@@ -23,24 +23,3 @@ code {
   height: 100%;
   width: 100%;
 } */
-
-
-
-
-.flyer-overlay {
-  background-color: rgba(0, 0, 0, 0.8);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.flyer-modal {
-  max-width: 90vw;
-  max-height: 90vh;
-  outline: none;
-}
-
-.modal-flyer-image {
-  width: 100%;
-  height: auto;
-}

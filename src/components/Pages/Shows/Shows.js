@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import ReactModal from 'react-modal';
+import React from 'react';
+import Show from './Show/Show';
 import './Shows.css';
 
 import may28th from './Flyers/may28thDWshow.jpg';
@@ -13,14 +13,10 @@ import sept14th from './Flyers/growlRecordsShowFlyer.jpeg'
 import fm2m from './Flyers/from-man2mist-version2.png';
 
 export default function Shows() {
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [selectedFlyer, setSelectedFlyer] = useState('');
 
-    const openModal = (flyer) => {
-        console.log('Modal opened for: ', flyer);
-        setSelectedFlyer(flyer);
-        setIsModalOpen(true);
-    };
+    //* ADD BAND LIST TO EACH SHOW. bands: [Oxygen Destroyer, Morgue Meat, Psychiatric Regurgitation']
+    //* then in description div, bands.forEach(bandName => bandName.ToUpper ) etc, to populate list
+    //? have last band be preceded by '&'
 
     const shows = [
         { flyer: may28th, alt: 'may_28th_2024_DoubleWide' },
@@ -42,27 +38,9 @@ export default function Shows() {
             <h4 className='shows-page-header'>(click or tap the venue name for directions)</h4>
             <ul className='show-dates-ul'>
                 {shows.map((show, idx) => (
-                    <li key={idx} className='show-date-li'>
-                        <img
-                            className='show-flyer'
-                            src={show.flyer}
-                            alt={show.alt}
-                            onClick={() => openModal(show.flyer)}
-                        />
-                        {/* bands go here (create component and pass in)*/}
-                        <div>placeholder text BAND LIST</div>
-                    </li>
+                    <Show show={show} idx={idx} />
                 ))}
             </ul>
-
-            <ReactModal
-                isOpen={isModalOpen}
-                onRequestClose={() => setIsModalOpen(false)}
-                className='flyer-modal'
-                overlayClassName='flyer-overlay'
-            >
-                <img src={selectedFlyer} alt='fullscreen flyer' className='modal-flyer-image' />
-            </ReactModal>
         </div>
     )
 }
