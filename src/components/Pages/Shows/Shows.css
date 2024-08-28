@@ -38,6 +38,7 @@
     height: auto;
     width: 235px;
     margin: 30px;
+    /* cursor: grab; */
 }
 
 .show-description {

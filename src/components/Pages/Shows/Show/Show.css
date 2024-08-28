@@ -1,29 +1,37 @@
 .flyer-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  .flyer-modal {
-    max-width: 90vw;
-    max-height: 100vh;
-    outline: none;
-    z-index: 1001;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.flyer-modal {
+  max-width: 90vw;
+  max-height: 100vh;
+  outline: none;
+  z-index: 1001;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .modal-flyer-image {
-    width: 95vw;
-    height: 95vh;
-    object-fit: contain;
-  }
+.modal-flyer-image {
+  width: 95vw;
+  height: 95vh;
+  object-fit: contain;
+  max-width: none;
+  min-width: none;
+}
+
+.transform-wrapper {
+  overflow: visible;
+  width: 100%;
+  height: 100%;
+}
