@@ -23,7 +23,7 @@
   }
 
   .modal-flyer-image {
-    height: 100vh;
-    width: auto;
+    width: 95vw;
+    height: 95vh;
     object-fit: contain;
   }
