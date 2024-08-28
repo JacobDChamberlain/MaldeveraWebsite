@@ -1,25 +1,31 @@
 import React, { useState } from "react";
 import ReactModal from 'react-modal';
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 import './Show.css';
 
 
 export default function Show({idx, show}) {
-    const [isOpen, setIsOpen] = useState(false);
+    // const [isOpen, setIsOpen] = useState(false);
 
-    const toggleModal = (src) => {
-        console.log(`modal is open: ${isOpen}`)
-        console.log(`image source: ${src}`)
-        setIsOpen(!isOpen);
-    }
+    // const toggleModal = (src) => {
+    //     console.log(`modal is open: ${isOpen}`)
+    //     console.log(`image source: ${src}`)
+    //     setIsOpen(!isOpen);
+    // }
 
     return (
         <li key={idx} className='show-date-li'>
-            <img
-                className='show-flyer-0'
-                src={show.flyer}
-                alt={show.alt}
-                onClick={() => toggleModal(show.flyer)}
-            />
+            <TransformWrapper>
+                <TransformComponent>
+                    <img
+                        className='show-flyer-0'
+                        src={show.flyer}
+                        alt={show.alt}
+                        // onClick={() => toggleModal(show.flyer)}
+                    />
+                </TransformComponent>
+            </TransformWrapper>
+
             {/* bands go here (create component and pass in)*/}
             <div className="show-description">
                 {show.date}<br />
@@ -39,20 +45,23 @@ export default function Show({idx, show}) {
                     }</div>
                 ))}
             </div>
-            <ReactModal
+            {/* <ReactModal
                 isOpen={isOpen}
                 onRequestClose={toggleModal}
                 className='flyer-modal'
                 overlayClassName='flyer-overlay'
             >
-                {/* <button className="close-modal-button" onClick={toggleModal}>Close</button> */}
-                <img
-                    src={show.flyer}
-                    alt='fullscreen flyer'
-                    className='modal-flyer-image'
-                    onClick={toggleModal}
-                />
-            </ReactModal>
+                <TransformWrapper>
+                    <TransformComponent>
+                        <img
+                            src={show.flyer}
+                            alt='fullscreen flyer'
+                            className='modal-flyer-image'
+                            onClick={toggleModal}
+                        />
+                    </TransformComponent>
+                </TransformWrapper>
+            </ReactModal> */}
         </li>
     )
 }
