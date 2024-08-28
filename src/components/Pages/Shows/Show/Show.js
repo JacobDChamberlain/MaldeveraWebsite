@@ -12,10 +12,11 @@ export default function Show({ idx, show }) {
           maxScale: 5,           // Set your desired maximum zoom level
         }}
         pan={{
-          paddingSize: 0, // Prevent adding padding while panning
+          paddingSize: 0,        // Prevent adding padding while panning
         }}
-        wheel={{ disabled: true }} // Disable mouse wheel zoom
-        doubleClick={{ disabled: true }} // Disable double-click zoom
+        // wheel={{ disabled: true }} // Disable mouse wheel zoom
+        // doubleClick={{ disabled: true }} // Disable double-click zoom
+        pinch={{ disabled: false, step: 10 }} // Enable pinch zoom with a defined step sensitivity
       >
         <TransformComponent>
           <img
@@ -25,7 +26,6 @@ export default function Show({ idx, show }) {
           />
         </TransformComponent>
       </TransformWrapper>
-      {/* bands go here (create component and pass in) */}
       <div className="show-description">
         {show.date}<br />
         @ <a
