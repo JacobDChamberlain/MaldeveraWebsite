@@ -14,6 +14,11 @@
 .song-select {
   background-color: #333;
   text-align: center;
-  color: lime;
+  color: #1ED760;
   font-size: 15px;
+  border-radius: 40px;
+}
+
+.rhap_container .rhap_time {
+  color: #1ED760; /* Replace with your desired color */
 }
