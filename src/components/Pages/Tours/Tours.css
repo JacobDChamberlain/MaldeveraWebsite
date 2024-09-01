@@ -8,7 +8,7 @@
     font-weight: bold;
     padding: 20px; /* Padding to prevent content from touching the edges */
 
-    padding-bottom: 50px; /* add room for audio player */
+    padding-bottom: 110px; /* add room for audio player */
 }
 
 .tour-list {

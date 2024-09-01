@@ -38,7 +38,7 @@ export default function Shows() {
             <h4 className='shows-page-header'>(click or tap the venue name for directions)</h4>
             <ul className='show-dates-ul'>
                 {shows.map((show, idx) => (
-                    <Show show={show} idx={idx} />
+                    <Show show={show} key={idx} />
                 ))}
             </ul>
         </div>
