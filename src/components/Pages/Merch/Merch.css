@@ -24,6 +24,8 @@
     padding: 0px;
 
     justify-content: center;
+
+    padding-bottom: 110px; /* add room for audio player */
 }
 
 

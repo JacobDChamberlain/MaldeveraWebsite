@@ -1,0 +1,19 @@
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #336; /* Change this to your desired background color
+  color: white; /* Change this to your desired text color */
+  text-align: center;
+  padding: 0px 0; /* Adjust the padding as needed */
+  z-index: 1000; /* Ensures it appears on top of other content */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Optional: adds a shadow for better visibility */
+}
+
+.song-select {
+  background-color: #333;
+  text-align: center;
+  color: lime;
+  font-size: 15px;
+}

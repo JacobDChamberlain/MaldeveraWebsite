@@ -9,6 +9,8 @@
     font-weight: bold;
 
     height: 500px;
+
+    padding-bottom: 110px; /* add room for audio player */
 }
 
 
