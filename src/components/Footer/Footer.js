@@ -30,7 +30,7 @@ export default function Footer() {
 
     return (
         <div className='footer-wrapper'>
-            <select onChange={handleTrackSelection} value={selectedTrack}>
+            <select className='song-select' onChange={handleTrackSelection} value={selectedTrack}>
                 { albumTracks.map( (track, idx) => (
                     <option key={idx} value={track.path}>{track.title}</option>
                 ))}
