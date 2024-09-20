@@ -22,7 +22,7 @@ const albumTracks = [
 
 
 export default function Footer() {
-    const [selectedTrack, setSelectedTrack] = useState(albumTracks[0].path);
+    const [selectedTrack, setSelectedTrack] = useState(albumTracks[4].path);
 
     const handleTrackSelection = (e) => {
         setSelectedTrack(e.target.value);
