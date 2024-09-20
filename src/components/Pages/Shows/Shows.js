@@ -10,6 +10,7 @@ import june27th from './Flyers/june27th.PNG';
 import june30th from './Flyers/june30thCharliesShow.PNG';
 import august16h from './Flyers/august16th.jpg';
 import sept14th from './Flyers/growlRecordsShowFlyer.jpeg'
+import sept27th from './Flyers/sept-27-flyer.jpeg';
 import fm2m from './Flyers/from-man2mist-version2.png';
 
 export default function Shows() {
@@ -27,7 +28,7 @@ export default function Shows() {
         { flyer: '.'+june30th, alt: 'june_30th_2024_CharliesStarLounge', date: 'June 30th, 2024', venue: 'Charlie\'s Star Lounge', address: '4319 Main St, Dallas, TX 75226', bands: ['Festival'] },
         { flyer: '.'+august16h, alt: 'august_16th_2024_DoubleWide', date: 'August 16th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Oxygen Destroyer', 'Morgue Meat'] },
         { flyer: '.'+sept14th, alt: 'sept_14th_2024_GrowlRecords', date: 'September 14th, 2024', venue: 'Growl Records', address: '09 E Abram St, Arlington, TX 76010', bands: ['Festival'] },
-        { flyer: '.'+fm2m, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['Festival'] },
+        { flyer: '.'+sept27th, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['Festival'] },
         { flyer: '.'+fm2m, alt: 'october_13th_2024_DoubleWide', date: 'October 13th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Civil Serpents'] },
         { flyer: '.'+fm2m, alt: 'december_7th_2024_RenosChopShop', date: 'December 7th, 2024', venue: 'Reno\'s Chop Shop', address: '210 N Crowdus St, Dallas, TX 75226', bands: ['Festival'] }
     ];
