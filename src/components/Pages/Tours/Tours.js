@@ -1,11 +1,13 @@
 import React from "react";
 import './Tours.css'
 
+import tourFlyer2024 from './TourFlyers/fall-tour-2024.jpeg';
+
 
 export default function Tours() {
     return (
         <div className="tours-wrapper">
-            <div className="outer-border">
+            {/* <div className="outer-border">
                 <div className="mid-border">
                     <div className="inner-border">
                         <img className="vertical-decoration top" src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png" alt="vertical decoration" />
@@ -29,7 +31,13 @@ export default function Tours() {
                         <img className="vertical-decoration bottom" src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png" alt="vertical decoration" />
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+            <img
+                className="tour-flyer"
+                src={tourFlyer2024}
+                alt="tour-flyer-2024"
+            />
         </div>
     )
 }

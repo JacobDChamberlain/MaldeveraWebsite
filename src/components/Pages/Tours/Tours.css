@@ -11,6 +11,16 @@
     padding-bottom: 110px; /* add room for audio player */
 }
 
+.tour-flyer {
+    width: 100%; /* Fill the width of the screen */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible without cropping */
+    max-width: 600px; /* Optional: set a max width to prevent it from getting too large */
+}
+
+
+
+
 .tour-list {
     padding: 0;
     list-style-type: none;
