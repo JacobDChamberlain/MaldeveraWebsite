@@ -30,7 +30,7 @@ export default function Shows() {
         // { flyer: '.'+june30th, alt: 'june_30th_2024_CharliesStarLounge', date: 'June 30th, 2024', venue: 'Charlie\'s Star Lounge', address: '4319 Main St, Dallas, TX 75226', bands: ['Festival'] },
         // { flyer: '.'+august16h, alt: 'august_16th_2024_DoubleWide', date: 'August 16th, 2024', venue: 'DoubleWide', address: '3510 Commerce St, Dallas, TX', bands: ['Oxygen Destroyer', 'Morgue Meat'] },
         // { flyer: '.'+sept14th, alt: 'sept_14th_2024_GrowlRecords', date: 'September 14th, 2024', venue: 'Growl Records', address: '09 E Abram St, Arlington, TX 76010', bands: ['Festival'] },
-        { flyer: '.'+sept27th, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['Festival'] },
+        { flyer: '.'+sept27th, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['AKA', 'Solly'] },
         { flyer: '.'+oct4, alt: 'october_4th_2024_Renos', date: 'October 4th, 2024', venue: 'Renos', address: '210 N Crowdus St, Dallas, TX 75226', bands: ['In Human Form', 'Mouth of Cronus', 'Norman Invasion'] },
         { flyer: '.'+oct13, alt: 'october_13th_2024_GrowlRecords', date: 'October 13th, 2024', venue: 'Growl Records', address: '09 E Abram St, Arlington, TX 76010', bands: ['Civil Serpents', 'Negative Influence', 'Bliss Fields'] },
         { flyer: '.'+fm2m, alt: 'december_7th_2024_RenosChopShop', date: 'December 7th, 2024', venue: 'Reno\'s Chop Shop', address: '210 N Crowdus St, Dallas, TX 75226', bands: ['Festival'] }
