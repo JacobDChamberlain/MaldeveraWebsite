@@ -29,7 +29,7 @@ const shirtDesigns = [
         price: 20
     },
     {
-        name: 'From Man To Mist',
+        name: 'From Man To Mist (Swipe)',
         images: [fm2mFront, fm2mBack],
         description: "From Man To Mist",
         price: 30
