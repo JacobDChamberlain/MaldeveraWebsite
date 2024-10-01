@@ -28,6 +28,7 @@ function App() {
             <Route path='/merch' Component={ Merch } />
             <Route path='/about' Component={ About } />
             <Route path='/shows' Component={ Shows } />
+            <Route path='/tour' Component={ Tours } />
             <Route path='/tours' Component={ Tours } />
             <Route path='/contact' Component={ Contact } />
             <Route path='/giveusyourmoney' Component={ Purchase } />
