@@ -2,6 +2,7 @@ import React from 'react';
 import StoreItem from './StoreItem/StoreItem';
 import './Merch.css';
 
+import blueJeff from '../../../images/shirt-designs/BLUE-JEFF.png';
 import goreLogo from '../../../images/shirt-designs/GORE-LOGO.png';
 import snakeSkull from '../../../images/shirt-designs/snake-skull.png';
 import fm2mFront from '../../../images/shirt-designs/man2mist-FRONT.png';
@@ -9,6 +10,12 @@ import fm2mBack from '../../../images/shirt-designs/man2mist-BACK.png';
 
 
 const shirtDesigns = [
+    {
+        name: 'Blue Jeff',
+        images: [blueJeff],
+        description: "A wild BLUE JEFF appears...",
+        price: 20
+    },
     {
         name: 'Gore Logo',
         images: [goreLogo],
