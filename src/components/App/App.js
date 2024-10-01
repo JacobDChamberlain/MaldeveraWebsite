@@ -13,7 +13,6 @@ import Tours from '../Pages/Tours/Tours';
 import Contact from '../Pages/Contact/Contact';
 import Purchase from '../Pages/Purchase/Purchase';
 import NotFound from '../Pages/NotFound/NotFound';
-
 import './App.css';
 
 function App() {
