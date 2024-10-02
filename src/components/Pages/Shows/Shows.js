@@ -33,6 +33,7 @@ export default function Shows() {
         { flyer: '.'+sept27th, alt: 'sept_27th_2024_ZoundsBSide', date: 'September 27th, 2024', venue: 'Zounds B-Side', address: '10050 Shoreview Rd, Dallas, TX 75238', bands: ['AKA', 'Solly'] },
         { flyer: '.'+oct4, alt: 'october_4th_2024_Renos', date: 'October 4th, 2024', venue: 'Renos', address: '210 N Crowdus St, Dallas, TX 75226', bands: ['In Human Form', 'Mouth of Cronus', 'Norman Invasion'] },
         { flyer: '.'+oct13, alt: 'october_13th_2024_GrowlRecords', date: 'October 13th, 2024', venue: 'Growl Records', address: '09 E Abram St, Arlington, TX 76010', bands: ['Civil Serpents', 'Negative Influence', 'Bliss Fields'] },
+        { flyer: '.'+fm2m, alt: 'october_25th_2024_CheapSteaks', date: 'October 25th, 2024', venue: 'Cheap Steaks', address: '2613 Elm St, Dallas, TX 75226', bands: ['Festival'] },
         { flyer: '.'+fm2m, alt: 'december_7th_2024_RenosChopShop', date: 'December 7th, 2024', venue: 'Reno\'s Chop Shop', address: '210 N Crowdus St, Dallas, TX 75226', bands: ['Festival'] }
     ];
 
