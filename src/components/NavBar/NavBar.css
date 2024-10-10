@@ -21,6 +21,9 @@
 
 .nav-link:hover {
     color: rgb(162, 68, 68);
+    .cart-svg {
+        fill: rgb(162, 68, 68);
+    }
 }
 
 a:visited {

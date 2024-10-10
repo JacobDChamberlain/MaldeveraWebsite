@@ -30,7 +30,7 @@ function App() {
             <Route path='/tour' Component={ Tours } />
             <Route path='/tours' Component={ Tours } />
             <Route path='/contact' Component={ Contact } />
-            <Route path='/giveusyourmoney' Component={ Purchase } />
+            <Route path='/checkout' Component={ Purchase } />
             <Route path='*' Component={ NotFound } />
           </Routes>
       </BrowserRouter>
