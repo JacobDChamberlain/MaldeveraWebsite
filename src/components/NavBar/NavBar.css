@@ -8,6 +8,10 @@
     padding: 20px;
     flex-direction: column;
     /* width: 100%; */
+
+    /* position: sticky;
+    top: 0px; <-- use this to make the navbar
+    stick to the top of the page when scrolling */
 }
 
 .nav-link {
@@ -28,4 +32,21 @@
 
 a:visited {
     text-decoration: none;
+}
+
+.cart-notification {
+    display: flex;
+    border: 1px solid red;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: medium;
+    background-color: orangered;
+    color: white;
+    transform: translate(10%, 10%);
 }

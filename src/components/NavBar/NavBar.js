@@ -13,8 +13,8 @@ export default function NavBar() {
                 <NavLink className="nav-link" to='/about'>ABOUT</NavLink>
                 <NavLink className="nav-link" to='/shows'>SHOWS</NavLink>
                 <NavLink className="nav-link" to='/contact'>CONTACT</NavLink>
-                <NavLink className="nav-link" to='/checkout'>
-                    <svg className='cart-svg' fill="#ffffff" width="24" height="24" viewBox="0 0 902.86 902.86" stroke="#ffffff">
+                <NavLink className="nav-link" to='/checkout' style={{ position: 'relative'}}>
+                    <svg className='cart-svg' fill="#ffffff" width="30" height="30" viewBox="0 0 902.86 902.86" stroke="#ffffff">
                         <g strokeWidth="0" />
                         <g strokeLinecap="round" strokeLinejoin="round" />
                         <g>
@@ -24,6 +24,7 @@ export default function NavBar() {
                             </g>
                         </g>
                     </svg>
+                    <div className='cart-notification'>3</div>
                 </NavLink>
             </div>
         </div>
