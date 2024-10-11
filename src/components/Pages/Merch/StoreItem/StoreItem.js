@@ -29,7 +29,7 @@ export default function StoreItem({ item }) {
                     {formatCurrency(item.price)}
                 </div>
                 {quantity === 0 ? (
-                    <button onClick={() => increaseItemQuantity(item.id)}>+ Add To Cart</button>
+                    <button style={{ border: "none", borderRadius: "20px", cursor: "pointer", width: "110px", alignSelf: "center" }} onClick={() => increaseItemQuantity(item.id)}>+ Add To Cart</button>
                     ) : (<div style={{ display: "flex", alignItems: "center", flexDirection: "column", gap: ".5rem" }}>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: ".5rem" }}>
                             <button onClick={() => decreaseItemQuantity(item.id)} style={{ cursor: "pointer" }}>-</button>
