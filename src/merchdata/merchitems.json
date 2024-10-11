@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Blue Jeff",
+        "images": ["/images/BLUE-JEFF.png"],
+        "description": "A wild BLUE JEFF appears...",
+        "price": 20
+    },
+    {
+        "id": 2,
+        "name": "Gore Logo",
+        "images": ["/images/GORE-LOGO.png"],
+        "description": "BAPTIZED...IN BLOOD!",
+        "price": 20
+    },
+    {
+        "id": 3,
+        "name": "Snake Skull",
+        "images": ["/images/snake-skull.png"],
+        "description": "Salvadora Maldevera",
+        "price": 20
+    },
+    {
+        "id": 4,
+        "name": "From Man To Mist (Swipe)",
+        "images": ["/images/man2mist-FRONT.png"],
+        "description": "From Man To Mist",
+        "price": 30
+    }
+]
