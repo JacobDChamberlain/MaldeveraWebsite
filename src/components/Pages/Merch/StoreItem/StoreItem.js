@@ -1,13 +1,18 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import formatCurrency from "../../../../utilities/formatCurrency";
 import './StoreItem.css';
-// import ImageSwiper from "../../../ImageSwiper/ImageSwiper";
+import { useMerchCart } from "../../../../context/MerchCartContext";
 
 
 export default function StoreItem({ item }) {
-    const navigate = useNavigate();
-    const quantity = 1;
+    const {
+        getItemQuantity,
+        increaseItemQuantity,
+        decreaseItemQuantity,
+        removeFromCart
+    } = useMerchCart();
+
+    const quantity = getItemQuantity(item.id);
 
     return (
         <div className="store-item-wrapper">
@@ -24,16 +29,16 @@ export default function StoreItem({ item }) {
                     {formatCurrency(item.price)}
                 </div>
                 {quantity === 0 ? (
-                    <button>+ Add To Cart</button>
+                    <button onClick={() => increaseItemQuantity(item.id)}>+ Add To Cart</button>
                     ) : (<div style={{ display: "flex", alignItems: "center", flexDirection: "column", gap: ".5rem" }}>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: ".5rem" }}>
-                            <button style={{ cursor: "pointer" }}>-</button>
+                            <button onClick={() => decreaseItemQuantity(item.id)} style={{ cursor: "pointer" }}>-</button>
                             <div>
                                 <span>{quantity}</span> in cart
                             </div>
-                            <button style={{ cursor: "pointer" }}>+</button>
+                            <button onClick={() => increaseItemQuantity(item.id)} style={{ cursor: "pointer" }}>+</button>
                         </div>
-                        <button style={{ backgroundColor: "orangered", borderRadius: "40px", border: "none", color: "white", padding: "5px 10px 5px 10px", cursor: "pointer" }}>Remove</button>
+                        <button onClick={() => removeFromCart(item.id)} style={{ backgroundColor: "orangered", borderRadius: "40px", border: "none", color: "white", padding: "5px 10px 5px 10px", cursor: "pointer" }}>Remove</button>
                     </div>
                 )}
             </div>
