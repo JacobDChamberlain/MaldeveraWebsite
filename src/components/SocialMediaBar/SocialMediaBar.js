@@ -46,11 +46,11 @@ const socialMediaLinks = [
 
 export default function SocialMediaBar() {
     return (
-        <ul className='social-media-links-ul'>
+        <ul className='social-media-lonks-ul'>
             { socialMediaLinks.map( link => (
                 <Link to={ link.url } key={ link.name }>
                     <img
-                        className='social-media-icon'
+                        className='social-media-icoon'
                         src={ link.imagePath }
                         alt='social media icon'
                         data-url={ link.url }

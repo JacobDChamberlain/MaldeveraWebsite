@@ -58,8 +58,8 @@
   .navbar-wrapper {
     width: 90vw;
   }
-  .nav-link {
-    font-size: 15px;
+  .my-nav-link {
+    font-size: 14px;
   }
 
 
@@ -73,7 +73,7 @@
   }
 
 
-  .social-media-icon {
+  .social-media-icoon {
     height: 40px;
     width: 40px;
   }
