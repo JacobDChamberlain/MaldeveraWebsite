@@ -27,6 +27,12 @@ export function MerchCart({ isOpen }) {
                             }, 0)
                         )}
                     </div>
+                    <div className="ms-auto fs-5">
+                        Page Under Construction
+                        <div className="ms-auto fs-6">
+                            For all merch & size inqueries, please message us on Instagram @maldevera, or any social media platform. We respond quickly!
+                        </div>
+                    </div>
                 </Stack>
             </Offcanvas.Body>
         </Offcanvas>

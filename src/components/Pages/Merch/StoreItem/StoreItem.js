@@ -29,14 +29,14 @@ export default function StoreItem({ item }) {
                     {formatCurrency(item.price)}
                 </div>
                 {quantity === 0 ? (
-                    <button style={{ border: "none", borderRadius: "20px", cursor: "pointer", width: "110px", alignSelf: "center" }} onClick={() => increaseItemQuantity(item.id)}>+ Add To Cart</button>
+                    <button style={{ border: "none", borderRadius: "20px", cursor: "pointer", width: "auto", alignSelf: "center" }} onClick={() => increaseItemQuantity(item.id)}>+ Add To Cart</button>
                     ) : (<div style={{ display: "flex", alignItems: "center", flexDirection: "column", gap: ".5rem" }}>
                         <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: ".5rem" }}>
-                            <button onClick={() => decreaseItemQuantity(item.id)} style={{ cursor: "pointer" }}>-</button>
+                            <button onClick={() => decreaseItemQuantity(item.id)} style={{ border: "none", borderRadius: "20px", width: "30px", cursor: "pointer" }}>-</button>
                             <div>
                                 <span>{quantity}</span> in cart
                             </div>
-                            <button onClick={() => increaseItemQuantity(item.id)} style={{ cursor: "pointer" }}>+</button>
+                            <button onClick={() => increaseItemQuantity(item.id)} style={{ border: "none", borderRadius: "20px", width: "30px", cursor: "pointer" }}>+</button>
                         </div>
                         <button onClick={() => removeFromCart(item.id)} style={{ backgroundColor: "orangered", borderRadius: "40px", border: "none", color: "white", padding: "5px 10px 5px 10px", cursor: "pointer" }}>Remove</button>
                     </div>
