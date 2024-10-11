@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import formatCurrency from "../../../../utilities/formatCurrency";
 import './StoreItem.css';
 // import ImageSwiper from "../../../ImageSwiper/ImageSwiper";
 
@@ -19,7 +20,7 @@ export default function StoreItem({ item }) {
                     { item.name.toUpperCase() }
                 </div>
                 <div className="store-item-price">
-                    ${ item.price }.00
+                    {formatCurrency(item.price)}
                 </div>
                 <button className='store-item-purchase-button' onClick={ () => navigate("/giveusyourmoney")}>Add to Cart 🛒</button>
             </div>
