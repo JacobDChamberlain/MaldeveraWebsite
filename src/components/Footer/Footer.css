@@ -21,9 +21,13 @@
 .footer-toggle {
   background: none;
   border: none;
-  /* color: white; */
+  color: white;
   font-size: 20px;
   cursor: pointer;
+}
+
+.footer-toggle:hover {
+  color:  rgb(162, 68, 68);
 }
 
 .song-select {
