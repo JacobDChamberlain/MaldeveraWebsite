@@ -19,7 +19,7 @@ const albumTracks = [
     { title: 'Jukai', path: Jukai, },
     { title: 'Icon Of Sin', path: IconOfSin, },
     { title: 'Winter Palace', path: WinterPalace },
-    { title: 'Mo Murda', path: MoMurda }
+    { title: 'Gangsta Pat - Mo Murda', path: MoMurda }
 ]
 
 
