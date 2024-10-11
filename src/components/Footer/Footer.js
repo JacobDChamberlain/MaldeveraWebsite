@@ -23,19 +23,31 @@ const albumTracks = [
 
 export default function Footer() {
     const [selectedTrack, setSelectedTrack] = useState(albumTracks[4].path);
+    const [isMinimized, setIsMinimized] = useState(false);
 
     const handleTrackSelection = (e) => {
         setSelectedTrack(e.target.value);
     };
 
+    const toggleFooter = () => {
+        setIsMinimized(!isMinimized);
+    }
+
     return (
-        <div className='footer-wrapper'>
-            <select className='song-select' onChange={handleTrackSelection} value={selectedTrack}>
-                { albumTracks.map( (track, idx) => (
-                    <option key={idx} value={track.path}>{track.title}</option>
-                ))}
-            </select>
-            <Player track={ selectedTrack } />
+        <div className={`footer-wrapper ${isMinimized ? 'minimized' : ''}`}>
+            <button className='footer-toggle' onClick={toggleFooter}>
+                {isMinimized ? '▲' : '▼'}
+            </button>
+            {!isMinimized && (
+                <>
+                    <select className='song-select' onChange={handleTrackSelection} value={selectedTrack}>
+                        { albumTracks.map( (track, idx) => (
+                            <option key={idx} value={track.path}>{track.title}</option>
+                        ))}
+                    </select>
+                    <Player track={ selectedTrack } />
+                </>
+            )}
         </div>
     )
 }
