@@ -4,6 +4,9 @@ import './NavBar.css';
 
 
 export default function NavBar() {
+    const cartQuantity = 0;
+
+
     return (
         <div className="navbar-wrapper">
             <div className='navigation-links'>
@@ -24,7 +27,7 @@ export default function NavBar() {
                             </g>
                         </g>
                     </svg>
-                    <div className='cart-notification'>3</div>
+                    { cartQuantity ? <div className='cart-notification'>{cartQuantity}</div> : null }
                 </NavLink>
             </div>
         </div>
