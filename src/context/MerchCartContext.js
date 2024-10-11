@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
+import { MerchCart } from '../components/MerchCart/MerchCart';
 
 const MerchCartContext = createContext();
 
@@ -8,6 +9,8 @@ export function useMerchCart() {
 
 export function MerchCartProvider({ children }) {
     const [cartItems, setCartItems] = useState([]);
+    const [isOpen, setIsOpen] = useState(false);
+
 
     // Get quantity of a specific item by ID
     function getItemQuantity(id) {
@@ -53,17 +56,24 @@ export function MerchCartProvider({ children }) {
     // Calculate total number of items in cart
     const cartQuantity = cartItems.reduce((quantity, item) => quantity + item.quantity, 0);
 
+    const openCart = () => setIsOpen(true);
+    const closeCart = () => setIsOpen(false);
+
     const value = {
         getItemQuantity,
         increaseItemQuantity,
         decreaseItemQuantity,
         removeFromCart,
         cartQuantity,
+        cartItems,
+        openCart,
+        closeCart
     };
 
     return (
         <MerchCartContext.Provider value={value}>
             {children}
+            <MerchCart />
         </MerchCartContext.Provider>
     );
 }

@@ -18,7 +18,12 @@ export default function NavBar() {
                 <NavLink className="nav-link" to='/shows'>SHOWS</NavLink>
                 <NavLink className="nav-link" to='/contact'>CONTACT</NavLink>
                 {cartQuantity > 0 && (
-                    <button onClick={openCart} className="nav-link" style={{ position: 'relative', background: 'none', border: 'none', cursor: 'pointer' }}>
+                    <button onClick={openCart}
+                            className="nav-link"
+                            style={{ position: 'relative',
+                                     background: 'none',
+                                     border: 'none',
+                                     cursor: 'pointer' }}>
                         <svg className='cart-svg' fill="#ffffff" width="30" height="30" viewBox="0 0 902.86 902.86" stroke="#ffffff">
                             <g strokeWidth="0" />
                             <g strokeLinecap="round" strokeLinejoin="round" />
