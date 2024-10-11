@@ -20,7 +20,8 @@ const albumTracks = [
     { title: 'Icon Of Sin', path: IconOfSin, },
     { title: 'Winter Palace', path: WinterPalace },
     { title: 'Gangsta Pat - Mo Murda', path: MoMurda }
-];
+]
+
 
 export default function Footer() {
     const [selectedTrack, setSelectedTrack] = useState(null); // Initialize with null
@@ -41,7 +42,6 @@ export default function Footer() {
         const randomTrackIndex = Math.floor(Math.random() * albumTracks.length);
         setSelectedTrack(albumTracks[randomTrackIndex].path);
     }, []); // better randomness than above? (ask the robot why idk)
-
 
     const handleTrackSelection = (e) => {
         setSelectedTrack(e.target.value);

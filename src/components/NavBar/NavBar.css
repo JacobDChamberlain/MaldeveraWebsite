@@ -1,4 +1,4 @@
-.navbar-wrapper {
+.my-navbar-wrapper {
     /* border: 1px solid red;
     border-radius: 20px; */
 
@@ -8,21 +8,47 @@
     padding: 20px;
     flex-direction: column;
     /* width: 100%; */
+
+    /* position: sticky;
+    top: 0px; <-- use this to make the navbar
+    stick to the top of the page when scrolling */
 }
 
-.nav-link {
+.my-nav-link {
     text-decoration: none;
     color: white;
     padding: 5px;
     font-size: 30px;
     font-weight: bold;
-    /* font-style: italic; */
+    min-width: 0;
+    flex-shrink: 1;
+    transition: font-size 0.3s ease;
 }
 
-.nav-link:hover {
+.my-nav-link:hover {
     color: rgb(162, 68, 68);
+    .cart-svg {
+        fill: rgb(162, 68, 68);
+    }
 }
 
 a:visited {
     text-decoration: none;
+}
+
+.cart-notification {
+    display: flex;
+    border: 1px solid red;
+    border-radius: 40px;
+    justify-content: center;
+    align-items: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: medium;
+    background-color: orangered;
+    color: white;
+    transform: translate(10%, 10%);
 }

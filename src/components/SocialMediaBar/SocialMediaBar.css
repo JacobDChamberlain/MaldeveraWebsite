@@ -1,23 +1,24 @@
-.social-media-links-ul {
+.social-media-lonks-ul {
     display: flex;
     width: 100%;
 
     padding-left: 0;
     justify-content: center;
+    list-style-type: none;
+    margin: 0;
 }
 
-.social-media-icon {
+.social-media-icoon {
     height: 50px;
     width: 50px;
     padding: 10px;
     border-radius: 20px;
+    box-sizing: content-box;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.social-media-icon:hover {
+.social-media-icoon:hover {
     cursor: pointer;
     background-color: orange;
-    display: flex;
-    /* add a transition animation here */
-    /* involving icons' opacity */
-    /* and maybe bouncy resize */
+    transform: scale(1.05);
 }
