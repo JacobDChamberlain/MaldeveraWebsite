@@ -9,6 +9,7 @@ import HydraulicInjectionInjury from './audio/4HydraulicInjectionInjury.wav';
 import Jukai from './audio/5Jukai.wav';
 import IconOfSin from './audio/6IconOfSin.wav';
 import WinterPalace from './audio/7WinterPalace.wav';
+import MoMurda from './audio/8gangstapat-momurda.mp3';
 
 const albumTracks = [
     { title: 'Guts', path: Guts, },
@@ -17,7 +18,8 @@ const albumTracks = [
     { title: 'Hydraulic Injection Injury', path: HydraulicInjectionInjury, },
     { title: 'Jukai', path: Jukai, },
     { title: 'Icon Of Sin', path: IconOfSin, },
-    { title: 'Winter Palace', path: WinterPalace }
+    { title: 'Winter Palace', path: WinterPalace },
+    { title: 'Mo Murda', path: MoMurda }
 ]
 
 
