@@ -7,6 +7,7 @@ import './StoreItem.css';
 
 export default function StoreItem({ item }) {
     const navigate = useNavigate();
+    const quantity = 1;
 
     return (
         <div className="store-item-wrapper">
@@ -22,7 +23,19 @@ export default function StoreItem({ item }) {
                 <div className="store-item-price">
                     {formatCurrency(item.price)}
                 </div>
-                <button className='store-item-purchase-button' onClick={ () => navigate("/giveusyourmoney")}>Add to Cart 🛒</button>
+                {quantity === 0 ? (
+                    <button>+ Add To Cart</button>
+                    ) : (<div style={{ display: "flex", alignItems: "center", flexDirection: "column", gap: ".5rem" }}>
+                        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: ".5rem" }}>
+                            <button style={{ cursor: "pointer" }}>-</button>
+                            <div>
+                                <span>{quantity}</span> in cart
+                            </div>
+                            <button style={{ cursor: "pointer" }}>+</button>
+                        </div>
+                        <button style={{ backgroundColor: "orangered", borderRadius: "40px", border: "none", color: "white", padding: "5px 10px 5px 10px", cursor: "pointer" }}>Remove</button>
+                    </div>
+                )}
             </div>
         </div>
     )
