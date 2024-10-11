@@ -73,7 +73,7 @@ export function MerchCartProvider({ children }) {
     return (
         <MerchCartContext.Provider value={value}>
             {children}
-            <MerchCart />
+            <MerchCart isOpen={isOpen} />
         </MerchCartContext.Provider>
     );
 }
