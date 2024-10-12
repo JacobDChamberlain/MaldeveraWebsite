@@ -28,10 +28,10 @@ export default function Footer() {
     const [isMinimized, setIsMinimized] = useState(false);
 
     // Function to select a random track
-    const getRandomTrack = () => {
-        const randomIndex = Math.floor(Math.random() * albumTracks.length);
-        return albumTracks[randomIndex].path;
-    };
+    // const getRandomTrack = () => {
+    //     const randomIndex = Math.floor(Math.random() * albumTracks.length);
+    //     return albumTracks[randomIndex].path;
+    // };
 
     // useEffect(() => {
     //     // Set a random track when the component mounts

@@ -13,6 +13,7 @@ import Tours from '../Pages/Tours/Tours';
 import Contact from '../Pages/Contact/Contact';
 import Purchase from '../Pages/Purchase/Purchase';
 import NotFound from '../Pages/NotFound/NotFound';
+import FloatingCartButton from '../FloatingCartButton/FloatingCartButton';
 import './App.css';
 
 import { MerchCartProvider } from '../../context/MerchCartContext';
@@ -37,6 +38,7 @@ function App() {
               <Route path='*' Component={ NotFound } />
             </Routes>
         </BrowserRouter>
+        <FloatingCartButton />
       </MerchCartProvider>
       <Footer />
     </div>
