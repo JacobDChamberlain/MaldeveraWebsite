@@ -5,8 +5,7 @@ import { useMerchCart } from "../../../../context/MerchCartContext";
 
 export default function StoreItem({ item }) {
     const {
-        increaseItemQuantity,
-        removeFromCart
+        increaseItemQuantity
     } = useMerchCart();
 
     const [selectedSize, setSelectedSize] = useState(""); // Track selected size
@@ -22,7 +21,7 @@ export default function StoreItem({ item }) {
     const handleAddToCart = () => {
         if (selectedSize) {
             if (availableSizes[selectedSize] > 0) {
-                increaseItemQuantity(item.id, selectedSize); // Add item to cart
+                increaseItemQuantity(item.id, selectedSize); // Pass selected size to cart
                 setItemAdded(true); // Set item added to true
                 // Optional: Reset back to "Add to Cart" after a delay
                 setTimeout(() => setItemAdded(false), 2000); // Reset after 2 seconds
