@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { MerchCart } from '../components/MerchCart/MerchCart';
+import { useLocalStorage } from '../hooks/useLocalStorage';
 
 const MerchCartContext = createContext();
 
@@ -8,7 +9,7 @@ export function useMerchCart() {
 }
 
 export function MerchCartProvider({ children }) {
-    const [cartItems, setCartItems] = useState([]);
+    const [cartItems, setCartItems] = useLocalStorage("shopping-cart", []);
     const [isOpen, setIsOpen] = useState(false);
 
 
