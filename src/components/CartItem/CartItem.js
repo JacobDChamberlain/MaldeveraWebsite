@@ -12,7 +12,7 @@ export function CartItem({ id, quantity }) {
         <Stack direction="horizontal" gap={2} className="d-flex align-items-center">
             <img
                 src={item.images[0]}
-                style={{ width: "125px", height: "75px", objectFit: "cover" }}
+                style={{ width: "125px", height: "auto", objectFit: "cover" }}
                 alt="merch-item"
             />
 
