@@ -5,16 +5,13 @@ import { useMerchCart } from "../../../../context/MerchCartContext";
 
 export default function StoreItem({ item }) {
     const {
-        getItemQuantity,
         increaseItemQuantity,
-        decreaseItemQuantity,
         removeFromCart
     } = useMerchCart();
 
     const [selectedSize, setSelectedSize] = useState(""); // Track selected size
     const [availableSizes, setAvailableSizes] = useState(item.sizes); // Track available sizes
-
-    const quantity = getItemQuantity(item.id, selectedSize); // Get quantity for selected size
+    const [itemAdded, setItemAdded] = useState(false); // Track if item is added to cart
 
     // Handle size selection
     const handleSizeChange = (event) => {
@@ -25,21 +22,15 @@ export default function StoreItem({ item }) {
     const handleAddToCart = () => {
         if (selectedSize) {
             if (availableSizes[selectedSize] > 0) {
-                increaseItemQuantity(item.id, selectedSize); // Pass selected size to increaseItemQuantity
-                // updateSizeQuantity(item.id, selectedSize, availableSizes[selectedSize] - 1); // Update the JSON quantity for the size
+                increaseItemQuantity(item.id, selectedSize); // Add item to cart
+                setItemAdded(true); // Set item added to true
+                // Optional: Reset back to "Add to Cart" after a delay
+                setTimeout(() => setItemAdded(false), 2000); // Reset after 2 seconds
             } else {
                 alert("Selected size is out of stock");
             }
         } else {
             alert("Please select a size");
-        }
-    };
-
-    // Handle removing from cart and updating size quantity
-    const handleRemoveFromCart = () => {
-        if (selectedSize) {
-            removeFromCart(item.id, selectedSize);
-            // updateSizeQuantity(item.id, selectedSize, availableSizes[selectedSize] + 1); // Update the JSON quantity for the size
         }
     };
 
@@ -67,48 +58,22 @@ export default function StoreItem({ item }) {
                     </select>
                 </div>
 
-                {/* Add to cart or modify cart quantity */}
-                {quantity === 0 ? (
-                    <button
-                        style={{ border: "none", borderRadius: "20px", cursor: "pointer", width: "auto", alignSelf: "center" }}
-                        onClick={handleAddToCart}
-                    >
-                        + Add To Cart
-                    </button>
-                ) : (
-                    <div style={{ display: "flex", alignItems: "center", flexDirection: "column", gap: ".5rem" }}>
-                        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: ".5rem" }}>
-                            <button
-                                onClick={() => decreaseItemQuantity(item.id, selectedSize)}
-                                style={{ border: "none", borderRadius: "20px", width: "30px", cursor: "pointer" }}
-                            >
-                                -
-                            </button>
-                            <div>
-                                <span>{quantity}</span> in cart
-                            </div>
-                            <button
-                                onClick={() => increaseItemQuantity(item.id, selectedSize)}
-                                style={{ border: "none", borderRadius: "20px", width: "30px", cursor: "pointer" }}
-                            >
-                                +
-                            </button>
-                        </div>
-                        <button
-                            onClick={handleRemoveFromCart}
-                            style={{
-                                backgroundColor: "orangered",
-                                borderRadius: "40px",
-                                border: "none",
-                                color: "white",
-                                padding: "5px 10px 5px 10px",
-                                cursor: "pointer"
-                            }}
-                        >
-                            Remove
-                        </button>
-                    </div>
-                )}
+                {/* Add to cart button with feedback */}
+                <button
+                    style={{
+                        border: "none",
+                        borderRadius: "20px",
+                        cursor: "pointer",
+                        width: "auto",
+                        alignSelf: "center",
+                        backgroundColor: itemAdded ? "lightgreen" : "white", // Change color if added
+                        animation: itemAdded ? "bounce 0.3s ease" : "none" // Add bounce animation if added
+                    }}
+                    onClick={handleAddToCart}
+                    disabled={itemAdded} // Disable button after item is added
+                >
+                    {itemAdded ? "Item Added!" : "+ Add To Cart"}
+                </button>
             </div>
         </div>
     );
