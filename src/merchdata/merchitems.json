@@ -4,27 +4,63 @@
         "name": "Blue Jeff",
         "images": ["/images/BLUE-JEFF.png"],
         "description": "A wild BLUE JEFF appears...",
-        "price": 20
+        "price": 19.99,
+        "sizes": {
+            "XS": 5,
+            "S": 5,
+            "M": 5,
+            "L": 5,
+            "XL": 5,
+            "XXL": 5,
+            "XXXL": 5
+        }
     },
     {
         "id": 2,
         "name": "Gore Logo",
         "images": ["/images/GORE-LOGO.png"],
         "description": "BAPTIZED...IN BLOOD!",
-        "price": 20
+        "price": 19.99,
+        "sizes": {
+            "XS": 5,
+            "S": 5,
+            "M": 5,
+            "L": 5,
+            "XL": 5,
+            "XXL": 5,
+            "XXXL": 5
+        }
     },
     {
         "id": 3,
         "name": "Snake Skull",
         "images": ["/images/snake-skull.png"],
         "description": "Salvadora Maldevera",
-        "price": 20
+        "price": 19.99,
+        "sizes": {
+            "XS": 5,
+            "S": 5,
+            "M": 5,
+            "L": 5,
+            "XL": 5,
+            "XXL": 5,
+            "XXXL": 5
+        }
     },
     {
         "id": 4,
         "name": "From Man To Mist",
         "images": ["/images/man2mist-FRONT.png"],
         "description": "From Man To Mist",
-        "price": 30
+        "price": 29.99,
+        "sizes": {
+            "XS": 5,
+            "S": 5,
+            "M": 5,
+            "L": 5,
+            "XL": 5,
+            "XXL": 5,
+            "XXXL": 5
+        }
     }
 ]

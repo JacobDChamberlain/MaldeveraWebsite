@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from 'react';
 import { MerchCart } from '../components/MerchCart/MerchCart';
+import { useLocalStorage } from '../hooks/useLocalStorage';
 
 const MerchCartContext = createContext();
 
@@ -8,49 +9,54 @@ export function useMerchCart() {
 }
 
 export function MerchCartProvider({ children }) {
-    const [cartItems, setCartItems] = useState([]);
+    const [cartItems, setCartItems] = useLocalStorage("shopping-cart", []);
     const [isOpen, setIsOpen] = useState(false);
 
-
-    // Get quantity of a specific item by ID
-    function getItemQuantity(id) {
-        const item = cartItems.find(item => item.id === id);
+    // Get quantity of a specific item by ID and size
+    function getItemQuantity(id, size) {
+        const item = cartItems.find(item => item.id === id && item.size === size);
         return item ? item.quantity : 0;
     }
 
-    // Increase quantity of an item
-    function increaseItemQuantity(id) {
+    // Increase quantity of an item based on ID and size
+    function increaseItemQuantity(id, size) {
         setCartItems(prevItems => {
-            const existingItem = prevItems.find(item => item.id === id);
+            const existingItem = prevItems.find(item => item.id === id && item.size === size);
 
             if (existingItem) {
                 return prevItems.map(item =>
-                    item.id === id ? { ...item, quantity: item.quantity + 1 } : item
+                    item.id === id && item.size === size
+                        ? { ...item, quantity: item.quantity + 1 }
+                        : item
                 );
             } else {
-                return [...prevItems, { id, quantity: 1 }];
+                return [...prevItems, { id, size, quantity: 1 }];
             }
         });
     }
 
-    // Decrease quantity of an item
-    function decreaseItemQuantity(id) {
+    // Decrease quantity of an item based on ID and size
+    function decreaseItemQuantity(id, size) {
         setCartItems(prevItems => {
-            const existingItem = prevItems.find(item => item.id === id);
+            const existingItem = prevItems.find(item => item.id === id && item.size === size);
 
             if (existingItem && existingItem.quantity === 1) {
-                return prevItems.filter(item => item.id !== id);
+                return prevItems.filter(item => !(item.id === id && item.size === size));
             } else {
                 return prevItems.map(item =>
-                    item.id === id ? { ...item, quantity: item.quantity - 1 } : item
+                    item.id === id && item.size === size
+                        ? { ...item, quantity: item.quantity - 1 }
+                        : item
                 );
             }
         });
     }
 
-    // Remove an item from the cart
-    function removeFromCart(id) {
-        setCartItems(prevItems => prevItems.filter(item => item.id !== id));
+    // Remove an item from the cart based on ID and size
+    function removeFromCart(id, size) {
+        setCartItems(prevItems =>
+            prevItems.filter(item => !(item.id === id && item.size === size))
+        );
     }
 
     // Calculate total number of items in cart

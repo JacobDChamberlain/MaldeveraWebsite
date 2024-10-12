@@ -25,7 +25,7 @@ const albumTracks = [
 
 export default function Footer() {
     const [selectedTrack, setSelectedTrack] = useState(null); // Initialize with null
-    const [isMinimized, setIsMinimized] = useState(false);
+    const [isMinimized, setIsMinimized] = useState(true);
 
     // Function to select a random track
     // const getRandomTrack = () => {
