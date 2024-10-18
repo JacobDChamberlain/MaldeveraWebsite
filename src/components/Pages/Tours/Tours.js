@@ -3,6 +3,8 @@ import ReactModal from "react-modal";
 import './Tours.css'
 
 import tourFlyer2024 from './TourFlyers/fall-tour-2024.jpeg';
+import TourCancel_01 from './TourFlyers/TourCancel_01.jpg';
+import TourCancel_02 from './TourFlyers/TourCancel_02.jpg';
 
 
 
@@ -17,10 +19,20 @@ export default function Tours() {
         <div className="tours-wrapper">
             <img
                 className="tour-flyer"
-                src={tourFlyer2024}
+                src={TourCancel_01}
                 alt="tour-flyer-2024"
-                onClick={() => toggleModal(tourFlyer2024)}
+                onClick={() => toggleModal(TourCancel_01)}
             />
+            <img
+                className="tour-flyer"
+                src={TourCancel_02}
+                alt="tour-flyer-2024"
+                onClick={() => toggleModal(TourCancel_02)}
+            />
+            <div className="tour-cancel-description">
+                Our Fall 2024 tour has been cancelled. Last Thursday, our drummer Stephan was in a motorcycle accident. He fractured two discs, and is unable to lift his left shoulder. As terrible as it is, things could have been much worse, and we’re fortunate he’s expected to make a full recovery. We’re sorry to all our friends and fans, but what matters most right now is that Stephan gets better. We want to thank all the venues/promoters involved for your understanding and kind wishes. We plan to shake things up in 2025!<br /><br />Catch our pals in Morgue Meat as they’ll still be playing a number of the shows for their Apocolyptic Visions tour. Please wish Stephan a speedy recovery! Remember to take care of yourselves and others.<br />Fuck on!
+                <div className="tour-cancel-updated-at">Updated Thurs, Oct 17, 2024</div>
+            </div>
             <ReactModal
                 isOpen={isOpen}
                 onRequestClose={toggleModal}
@@ -28,7 +40,13 @@ export default function Tours() {
                 overlayClassName="tour-flyer-overlay"
             >
                 <img
-                    src={tourFlyer2024}
+                    src={TourCancel_01}
+                    alt="tour-flyer-2024"
+                    className="modal-flyer-image"
+                    onClick={toggleModal}
+                />
+                <img
+                    src={TourCancel_02}
                     alt="tour-flyer-2024"
                     className="modal-flyer-image"
                     onClick={toggleModal}

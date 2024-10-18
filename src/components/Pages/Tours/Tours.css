@@ -16,6 +16,21 @@
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the entire image is visible without cropping */
     max-width: 600px; /* Optional: set a max width to prevent it from getting too large */
+    margin: 20px;
+}
+
+
+.tour-cancel-description {
+  width: 60vw;
+  color: rgb(175, 65, 65);
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.tour-cancel-updated-at {
+  font-size: 12px;
+  color: rgb(134, 50, 50);
 }
 
 .tour-flyer-overlay {
