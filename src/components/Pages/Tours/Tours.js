@@ -40,12 +40,6 @@ export default function Tours() {
                 overlayClassName="tour-flyer-overlay"
             >
                 <img
-                    src={TourCancel_01}
-                    alt="tour-flyer-2024"
-                    className="modal-flyer-image"
-                    onClick={toggleModal}
-                />
-                <img
                     src={TourCancel_02}
                     alt="tour-flyer-2024"
                     className="modal-flyer-image"
