@@ -1,0 +1,19 @@
+.not-found-wrapper {
+    /* border: 1px solid red;
+    border-radius: 20px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+
+    color: white;
+    height: 70vh;
+    font-size: 30px;
+    font-weight: bold;
+
+    background-image: url('../../../../public/images/frybroke.webp');
+    background-repeat: no-repeat;
+    background-position: center center;
+}

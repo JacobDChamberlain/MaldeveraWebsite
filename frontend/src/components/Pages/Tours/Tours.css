@@ -1,0 +1,49 @@
+.tours-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px; /* Padding to prevent content from touching the edges */
+
+    padding-bottom: 110px; /* add room for audio player */
+}
+
+.tour-flyer {
+    width: 100%; /* Fill the width of the screen */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire image is visible without cropping */
+    max-width: 600px; /* Optional: set a max width to prevent it from getting too large */
+}
+
+.tour-flyer-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+.tour-flyer-modal {
+    max-width: 100vw;
+    max-height: 100vh;
+    outline: none;
+    z-index: 1001;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.modal-flyer-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+  }

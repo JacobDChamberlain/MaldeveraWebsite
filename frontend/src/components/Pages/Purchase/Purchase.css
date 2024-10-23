@@ -1,0 +1,24 @@
+.purchase-page-wrapper {
+    /* border: 1px solid red;
+    border-radius: 40px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+
+    height: 500px;
+
+    padding-bottom: 110px; /* add room for audio player */
+}
+
+
+.email-link {
+    all: unset;
+}
+
+.email-link:hover {
+    cursor: pointer;
+    color: rgb(162, 68, 68);
+}

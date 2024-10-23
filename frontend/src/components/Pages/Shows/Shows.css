@@ -1,0 +1,62 @@
+.shows-wrapper {
+    /* border: 1px solid red;
+    border-radius: 20px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border-bottom: 1px solid black; */
+
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+
+    padding-bottom: 110px; /* add room for audio player */
+}
+
+.show-dates-ul {
+    list-style: none;
+    padding-left: 0px;
+    width: 80%;
+}
+
+.show-date-li {
+    /* border: 1px dotted yellow;
+    border-radius: 30px; */
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.show-flyer {
+    height: 300px;
+    width: 235px;
+    margin: 30px;
+}
+.show-flyer-0 {
+    height: auto;
+    width: 235px;
+    margin: 30px;
+    /* cursor: grab; */
+}
+
+.show-description {
+    margin: 30px;
+    width: 350px;
+}
+
+.venue-map-link {
+    text-decoration: none;
+    color: white;
+}
+
+.venue-map-link:visited {
+    text-decoration: none;
+    color: white;
+}
+.venue-map-link:hover {
+    color: lime
+}

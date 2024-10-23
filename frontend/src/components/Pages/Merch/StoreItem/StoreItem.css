@@ -1,0 +1,76 @@
+.store-item-wrapper {
+    /* border: 1px solid red;
+    border-radius: 40px; */
+
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    align-items: center;
+}
+
+.store-item-image {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 400px;
+    width: 400px;
+}
+
+.store-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.store-item-name {
+    padding: 5px;
+}
+
+.store-item-price {
+    padding: 5px;
+}
+
+.store-item-purchase-button {
+    width: 110px;
+    align-self: center; /* place this in <> </> with price. */
+}
+
+.store-item-purchase-button:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+
+
+
+.size-select {
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    margin: 10px;
+}
+.size-options {
+    text-align: center;
+}
+
+
+
+
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    opacity: 0.8;
+}

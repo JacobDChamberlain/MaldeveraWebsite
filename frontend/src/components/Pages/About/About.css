@@ -1,0 +1,67 @@
+.about-wrapper {
+    /* border: 1px solid red;
+    border-radius: 20px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    padding-bottom: 110px; /* add room for audio player */
+}
+
+.band-photo {
+    padding-top: 50px;
+    height: 200px;
+}
+
+.band-photo-description {
+    width: 600px;
+    color: white;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+}
+
+.bandcamp-link, .bandcamp-link:visited {
+    text-decoration: none;
+    color: white;
+}
+.bandcamp-link:hover {
+    cursor: pointer;
+    color: rgb(162, 68, 68);
+}
+
+.individual-photos-ul {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 20px;
+    margin: 0px;
+    list-style: none;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.individual-photo {
+    width: 170px;
+    align-self: center;
+}
+
+.indivitual-photo-description {
+    color: white;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.individual-photo-li {
+    display: flex;
+    flex-direction: column;
+    padding:  10px 10%;
+    height: 320px;
+    width: 215px;
+}

@@ -1,0 +1,23 @@
+.home-wrapper {
+    /* border: 1px solid red;
+    border-radius: 20px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: white;
+    /* height: auto; */
+    font-size: 30px;
+    font-weight: bold;
+
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
+
+    padding-bottom: 155px; /* add room for audio player */
+}
+
+.video-responsive {
+    margin: 20px;
+}
