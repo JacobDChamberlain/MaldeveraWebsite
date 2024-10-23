@@ -1,352 +1,47 @@
 const express = require('express');
 const cors = require('cors');
+const fs = require('fs');
 const app = express();
-const port = 5001; // or any other port
+const port = 5001;
 
 app.use(express.json());
 app.use(cors());
 
-
-// Sample inventory data (could be replaced with a database)
-// let inventory = [
-//     {
-//         "id": 1,
-//         "name": "Blue Jeff",
-//         "images": ["/images/BLUE-JEFF.png"],
-//         "description": "A wild BLUE JEFF appears...",
-//         "price": 19.99,
-//         "sizes": {
-//             "XS": 5,
-//             "S": 5,
-//             "M": 5,
-//             "L": 5,
-//             "XL": 5,
-//             "XXL": 5,
-//             "XXXL": 5
-//         }
-//     },
-//     {
-//         "id": 2,
-//         "name": "Gore Logo",
-//         "images": ["/images/GORE-LOGO.png"],
-//         "description": "BAPTIZED...IN BLOOD!",
-//         "price": 19.99,
-//         "sizes": {
-//             "XS": 5,
-//             "S": 5,
-//             "M": 5,
-//             "L": 5,
-//             "XL": 5,
-//             "XXL": 5,
-//             "XXXL": 5
-//         }
-//     },
-//     {
-//         "id": 3,
-//         "name": "Snake Skull",
-//         "images": ["/images/snake-skull.png"],
-//         "description": "Salvadora Maldevera",
-//         "price": 19.99,
-//         "sizes": {
-//             "XS": 5,
-//             "S": 5,
-//             "M": 5,
-//             "L": 5,
-//             "XL": 5,
-//             "XXL": 5,
-//             "XXXL": 5
-//         }
-//     },
-//     {
-//         "id": 4,
-//         "name": "From Man To Mist",
-//         "images": ["/images/man2mist-FRONT.png"],
-//         "description": "From Man To Mist",
-//         "price": 29.99,
-//         "sizes": {
-//             "XS": 5,
-//             "S": 5,
-//             "M": 5,
-//             "L": 5,
-//             "XL": 5,
-//             "XXL": 5,
-//             "XXXL": 5
-//         }
-//     }
-// ];
-
-let inventory = [
-    {
-        "id": 1,
-        "name": "Blue Jeff - XS",
-        "images": ["/images/BLUE-JEFF.png"],
-        "description": "A wild BLUE JEFF appears...",
-        "price": 19.99,
-        "size": "XS",
-        "quantity": 5
-    },
-    {
-        "id": 2,
-        "name": "Blue Jeff - S",
-        "images": ["/images/BLUE-JEFF.png"],
-        "description": "A wild BLUE JEFF appears...",
-        "price": 19.99,
-        "size": "S",
-        "quantity": 5
-    },
-    {
-        "id": 3,
-        "name": "Blue Jeff - M",
-        "images": ["/images/BLUE-JEFF.png"],
-        "description": "A wild BLUE JEFF appears...",
-        "price": 19.99,
-        "size": "M",
-        "quantity": 5
-    },
-    {
-        "id": 4,
-        "name": "Blue Jeff - L",
-        "images": ["/images/BLUE-JEFF.png"],
-        "description": "A wild BLUE JEFF appears...",
-        "price": 19.99,
-        "size": "L",
-        "quantity": 5
-    },
-    {
-        "id": 5,
-        "name": "Blue Jeff - XL",
-        "images": ["/images/BLUE-JEFF.png"],
-        "description": "A wild BLUE JEFF appears...",
-        "price": 19.99,
-        "size": "XL",
-        "quantity": 5
-    },
-    {
-        "id": 6,
-        "name": "Blue Jeff - XXL",
-        "images": ["/images/BLUE-JEFF.png"],
-        "description": "A wild BLUE JEFF appears...",
-        "price": 19.99,
-        "size": "XXL",
-        "quantity": 5
-    },
-    {
-        "id": 7,
-        "name": "Blue Jeff - XXXL",
-        "images": ["/images/BLUE-JEFF.png"],
-        "description": "A wild BLUE JEFF appears...",
-        "price": 19.99,
-        "size": "XXXL",
-        "quantity": 5
-    },
-    {
-        "id": 8,
-        "name": "Gore Logo - XS",
-        "images": ["/images/GORE-LOGO.png"],
-        "description": "BAPTIZED...IN BLOOD!",
-        "price": 19.99,
-        "size": "XS",
-        "quantity": 5
-    },
-    {
-        "id": 9,
-        "name": "Gore Logo - S",
-        "images": ["/images/GORE-LOGO.png"],
-        "description": "BAPTIZED...IN BLOOD!",
-        "price": 19.99,
-        "size": "S",
-        "quantity": 5
-    },
-    {
-        "id": 10,
-        "name": "Gore Logo - M",
-        "images": ["/images/GORE-LOGO.png"],
-        "description": "BAPTIZED...IN BLOOD!",
-        "price": 19.99,
-        "size": "M",
-        "quantity": 5
-    },
-    {
-        "id": 11,
-        "name": "Gore Logo - L",
-        "images": ["/images/GORE-LOGO.png"],
-        "description": "BAPTIZED...IN BLOOD!",
-        "price": 19.99,
-        "size": "L",
-        "quantity": 5
-    },
-    {
-        "id": 12,
-        "name": "Gore Logo - XL",
-        "images": ["/images/GORE-LOGO.png"],
-        "description": "BAPTIZED...IN BLOOD!",
-        "price": 19.99,
-        "size": "XL",
-        "quantity": 5
-    },
-    {
-        "id": 13,
-        "name": "Gore Logo - XXL",
-        "images": ["/images/GORE-LOGO.png"],
-        "description": "BAPTIZED...IN BLOOD!",
-        "price": 19.99,
-        "size": "XXL",
-        "quantity": 5
-    },
-    {
-        "id": 14,
-        "name": "Gore Logo - XXXL",
-        "images": ["/images/GORE-LOGO.png"],
-        "description": "BAPTIZED...IN BLOOD!",
-        "price": 19.99,
-        "size": "XXXL",
-        "quantity": 5
-    },
-    {
-        "id": 15,
-        "name": "Snake Skull - XS",
-        "images": ["/images/snake-skull.png"],
-        "description": "Salvadora Maldevera",
-        "price": 19.99,
-        "size": "XS",
-        "quantity": 5
-    },
-    {
-        "id": 16,
-        "name": "Snake Skull - S",
-        "images": ["/images/snake-skull.png"],
-        "description": "Salvadora Maldevera",
-        "price": 19.99,
-        "size": "S",
-        "quantity": 5
-    },
-    {
-        "id": 17,
-        "name": "Snake Skull - M",
-        "images": ["/images/snake-skull.png"],
-        "description": "Salvadora Maldevera",
-        "price": 19.99,
-        "size": "M",
-        "quantity": 5
-    },
-    {
-        "id": 18,
-        "name": "Snake Skull - L",
-        "images": ["/images/snake-skull.png"],
-        "description": "Salvadora Maldevera",
-        "price": 19.99,
-        "size": "L",
-        "quantity": 5
-    },
-    {
-        "id": 19,
-        "name": "Snake Skull - XL",
-        "images": ["/images/snake-skull.png"],
-        "description": "Salvadora Maldevera",
-        "price": 19.99,
-        "size": "XL",
-        "quantity": 5
-    },
-    {
-        "id": 20,
-        "name": "Snake Skull - XXL",
-        "images": ["/images/snake-skull.png"],
-        "description": "Salvadora Maldevera",
-        "price": 19.99,
-        "size": "XXL",
-        "quantity": 5
-    },
-    {
-        "id": 21,
-        "name": "Snake Skull - XXXL",
-        "images": ["/images/snake-skull.png"],
-        "description": "Salvadora Maldevera",
-        "price": 19.99,
-        "size": "XXXL",
-        "quantity": 5
-    },
-    {
-        "id": 22,
-        "name": "From Man To Mist - XS",
-        "images": ["/images/man2mist-FRONT.png"],
-        "description": "From Man To Mist",
-        "price": 29.99,
-        "size": "XS",
-        "quantity": 5
-    },
-    {
-        "id": 23,
-        "name": "From Man To Mist - S",
-        "images": ["/images/man2mist-FRONT.png"],
-        "description": "From Man To Mist",
-        "price": 29.99,
-        "size": "S",
-        "quantity": 5
-    },
-    {
-        "id": 24,
-        "name": "From Man To Mist - M",
-        "images": ["/images/man2mist-FRONT.png"],
-        "description": "From Man To Mist",
-        "price": 29.99,
-        "size": "M",
-        "quantity": 5
-    },
-    {
-        "id": 25,
-        "name": "From Man To Mist - L",
-        "images": ["/images/man2mist-FRONT.png"],
-        "description": "From Man To Mist",
-        "price": 29.99,
-        "size": "L",
-        "quantity": 5
-    },
-    {
-        "id": 26,
-        "name": "From Man To Mist - XL",
-        "images": ["/images/man2mist-FRONT.png"],
-        "description": "From Man To Mist",
-        "price": 29.99,
-        "size": "XL",
-        "quantity": 5
-    },
-    {
-        "id": 27,
-        "name": "From Man To Mist - XXL",
-        "images": ["/images/man2mist-FRONT.png"],
-        "description": "From Man To Mist",
-        "price": 29.99,
-        "size": "XXL",
-        "quantity": 5
-    },
-    {
-        "id": 28,
-        "name": "From Man To Mist - XXXL",
-        "images": ["/images/man2mist-FRONT.png"],
-        "description": "From Man To Mist",
-        "price": 29.99,
-        "size": "XXXL",
-        "quantity": 5
-    }
-];
-
+// Function to read the inventory data from the file
+function readInventory() {
+    const data = fs.readFileSync('./inventory.json', 'utf-8');
+    return JSON.parse(data);
+}
 
 // Endpoint to get inventory
 app.get('/api/inventory', (req, res) => {
+    const inventory = readInventory();
     res.json(inventory);
 });
 
-// Endpoint to decrement item size quantity
-app.post('/api/cart', (req, res) => {
-    const { itemId, selectedSize } = req.body;
+// Endpoint to get an item by ID
+app.get('/api/inventory/:id', (req, res) => {
+    const { id } = req.params;
+    const inventory = readInventory();
+    const item = inventory.find(i => i.id === id);
+    res.json(item);
+});
 
-    // Find item and decrement size quantity
-    const item = inventory.find(i => i.id === itemId);
-    if (item && item.sizes[selectedSize] > 0) {
-        item.sizes[selectedSize] -= 1;
-        res.status(200).json({ success: true, item });
+// Endpoint to decrement item quantity
+app.post('/api/cart', (req, res) => {
+    const { itemId, quantity } = req.body;
+    let inventory = readInventory();
+
+    // Find the item and check if the requested quantity is available
+    const itemIndex = inventory.findIndex(i => i.id === itemId);
+    if (itemIndex !== -1 && inventory[itemIndex].quantity >= quantity) {
+        inventory[itemIndex].quantity -= quantity;
+
+        // Save the updated inventory back to the file
+        fs.writeFileSync('./inventory.json', JSON.stringify(inventory, null, 2), 'utf-8');
+        res.status(200).json({ success: true, item: inventory[itemIndex], quantity });
     } else {
-        res.status(400).json({ success: false, message: "Out of stock" });
+        res.status(400).json({ success: false, message: "Requested quantity not available" });
     }
 });
 
