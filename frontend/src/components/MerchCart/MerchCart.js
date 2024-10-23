@@ -70,6 +70,7 @@ export function MerchCart({ isOpen }) {
                     <button
                         className="btn btn-primary w-100 mt-3"
                         onClick={handlePurchase}
+                        disabled={cartItems.length === 0}
                     >
                         Purchase
                     </button>

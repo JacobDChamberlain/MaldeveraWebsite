@@ -8,7 +8,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "XS",
-    "quantity": 0
+    "quantity": 5
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "S",
-    "quantity": 4
+    "quantity": 5
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "M",
-    "quantity": 0
+    "quantity": 5
   },
   {
     "id": 4,
