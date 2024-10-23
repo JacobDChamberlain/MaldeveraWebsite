@@ -53,7 +53,7 @@ app.post('/api/purchase', (req, res) => {
                 quantity
             });
         } else {
-            return res.status(400).json({ success: false, message: `Requested quantity not available for item ID ${id}` });
+            return res.status(400).json({ success: false, message: `Requested quantity not available for ${inventory[itemIndex].name}` });
         }
     }
 
