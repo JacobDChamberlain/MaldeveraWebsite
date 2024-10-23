@@ -6,7 +6,7 @@ import formatCurrency from "../../utilities/formatCurrency";
 import { useEffect, useState } from "react";
 
 export function MerchCart({ isOpen }) {
-    const { closeCart, cartItems, clearCart } = useMerchCart();
+    const { closeCart, cartItems, clearCart, increaseItemQuantity, decreaseItemQuantity } = useMerchCart();
     const [merchItems, setMerchItems] = useState([]);
 
     // Fetch the inventory data from the backend
@@ -51,7 +51,12 @@ export function MerchCart({ isOpen }) {
             <Offcanvas.Body>
                 <Stack gap={3}>
                     {cartItems.map((item) => (
-                        <CartItem key={`${item.id}-${item.size}`} {...item} />
+                        <CartItem
+                            key={`${item.id}-${item.size}`}
+                            {...item}
+                            increaseQuantity={() => increaseItemQuantity(item.id, item.size)}
+                            decreaseQuantity={() => decreaseItemQuantity(item.id, item.size)}
+                        />
                     ))}
                     <div className="ms-auto fw-bold fs-5">
                         Total{" "}
