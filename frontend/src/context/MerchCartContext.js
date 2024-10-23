@@ -18,10 +18,14 @@ export function MerchCartProvider({ children }) {
         return item ? item.quantity : 0;
     }
 
+    // Clear cart items after a purchase is made
+    function clearCart() {
+        setCartItems([]);
+    }
+
     // Increase quantity of an item based on ID and size, decrementing the available size
     function increaseItemQuantity(id, size, availableSizes) {
         // Decrement the available size before adding to cart
-        console.log(`increaseItemQuantity() => id: ${id}, size: ${size}, availableSizes: ${availableSizes}`)
         if (availableSizes[size] > 0) {
             setCartItems(prevItems => {
                 const existingItem = prevItems.find(item => item.id === id && item.size === size);
@@ -79,6 +83,7 @@ export function MerchCartProvider({ children }) {
 
     const value = {
         getItemQuantity,
+        clearCart,
         increaseItemQuantity,
         decreaseItemQuantity,
         removeFromCart,

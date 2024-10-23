@@ -5,8 +5,8 @@ import { useMerchCart } from "../../../../context/MerchCartContext";
 
 export default function StoreItem({ item, allItems }) {
     const { increaseItemQuantity } = useMerchCart();
-    const [selectedSize, setSelectedSize] = useState(""); // Track selected size
-    const [itemAdded, setItemAdded] = useState(false); // Track if item is added to cart
+    const [selectedSize, setSelectedSize] = useState("");
+    const [itemAdded, setItemAdded] = useState(false);
 
     // Get all sizes for this style
     const relatedItems = allItems.filter(i => i.name.split(' - ')[0] === item.name.split(' - ')[0]);
@@ -18,6 +18,7 @@ export default function StoreItem({ item, allItems }) {
     // Handle size selection
     const handleSizeChange = (event) => {
         setSelectedSize(event.target.value);
+        setItemAdded(false); // Reset itemAdded state when size changes
     };
 
     // Handle adding to cart
@@ -26,24 +27,12 @@ export default function StoreItem({ item, allItems }) {
             const selectedItem = relatedItems.find(i => i.size === selectedSize);
             if (selectedItem && selectedItem.quantity > 0) {
                 increaseItemQuantity(selectedItem.id, selectedSize, availableSizes);
+                setItemAdded(true);
 
-                // Make API call to decrement inventory
-                fetch('http://localhost:5001/api/cart', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ itemId: selectedItem.id, selectedSize })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        setItemAdded(true);
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => console.error('Error:', error));
+                // Reset itemAdded state after a short delay (e.g., 2 seconds)
+                setTimeout(() => {
+                    setItemAdded(false);
+                }, 2000);
             } else {
                 alert("Selected size is out of stock");
             }

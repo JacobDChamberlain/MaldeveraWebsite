@@ -2,11 +2,46 @@ import { Offcanvas, Stack } from "react-bootstrap";
 import { useMerchCart } from "../../context/MerchCartContext";
 import { CartItem } from "../CartItem/CartItem";
 import './MerchCart.css';
-import merchItems from "../../merchdata/merchitems.json";
 import formatCurrency from "../../utilities/formatCurrency";
+import { useEffect, useState } from "react";
 
 export function MerchCart({ isOpen }) {
-    const { closeCart, cartItems } = useMerchCart();
+    const { closeCart, cartItems, clearCart } = useMerchCart();
+    const [merchItems, setMerchItems] = useState([]);
+
+    // Fetch the inventory data from the backend
+    useEffect(() => {
+        fetch('http://localhost:5001/api/inventory')
+            .then(response => response.json())
+            .then(data => setMerchItems(data))
+            .catch(error => console.error('Error fetching inventory:', error));
+    }, []);
+
+    // Handle purchasing items in the cart
+    const handlePurchase = () => {
+        const itemsToPurchase = cartItems.map(({ id, quantity }) => ({
+            id,
+            quantity
+        }));
+
+        fetch('http://localhost:5001/api/purchase', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(itemsToPurchase)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("Purchase successful!");
+                clearCart(); // Clear the cart after successful purchase
+            } else {
+                alert(data.message);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    };
 
     return (
         <Offcanvas show={isOpen} onHide={closeCart} placement="end">
@@ -27,6 +62,12 @@ export function MerchCart({ isOpen }) {
                             }, 0)
                         )}
                     </div>
+                    <button
+                        className="btn btn-primary w-100 mt-3"
+                        onClick={handlePurchase}
+                    >
+                        Purchase
+                    </button>
                     <div className="ms-auto fs-5">
                         Page Under Construction
                         <div className="ms-auto fs-6">
