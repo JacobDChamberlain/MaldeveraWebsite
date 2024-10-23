@@ -13,6 +13,11 @@ function readInventory() {
     return JSON.parse(data);
 }
 
+// Function to write the updated inventory back to the file
+function writeInventory(inventory) {
+    fs.writeFileSync('./inventory.json', JSON.stringify(inventory, null, 2), 'utf-8');
+}
+
 // Endpoint to get inventory
 app.get('/api/inventory', (req, res) => {
     const inventory = readInventory();
@@ -27,22 +32,36 @@ app.get('/api/inventory/:id', (req, res) => {
     res.json(item);
 });
 
-// Endpoint to decrement item quantity
-app.post('/api/cart', (req, res) => {
-    const { itemId, quantity } = req.body;
+// Endpoint to decrement multiple item quantities
+app.post('/api/purchase', (req, res) => {
+    const itemsToPurchase = req.body; // Array of objects { id, quantity }
     let inventory = readInventory();
+    const purchasedItems = [];
 
-    // Find the item and check if the requested quantity is available
-    const itemIndex = inventory.findIndex(i => i.id === itemId);
-    if (itemIndex !== -1 && inventory[itemIndex].quantity >= quantity) {
-        inventory[itemIndex].quantity -= quantity;
+    for (const { id, quantity } of itemsToPurchase) {
+        // Find the item in the inventory
+        const itemIndex = inventory.findIndex(i => i.id === id);
 
-        // Save the updated inventory back to the file
-        fs.writeFileSync('./inventory.json', JSON.stringify(inventory, null, 2), 'utf-8');
-        res.status(200).json({ success: true, item: inventory[itemIndex], quantity });
-    } else {
-        res.status(400).json({ success: false, message: "Requested quantity not available" });
+        if (itemIndex !== -1 && inventory[itemIndex].quantity >= quantity) {
+            // Decrement the item's quantity
+            inventory[itemIndex].quantity -= quantity;
+
+            // Add the item to the list of purchased items
+            purchasedItems.push({
+                id,
+                name: inventory[itemIndex].name,
+                quantity
+            });
+        } else {
+            return res.status(400).json({ success: false, message: `Requested quantity not available for item ID ${id}` });
+        }
     }
+
+    // Save the updated inventory back to the file
+    writeInventory(inventory);
+
+    // Return the list of purchased items
+    res.status(200).json({ success: true, purchasedItems });
 });
 
 app.listen(port, () => {
