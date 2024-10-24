@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import formatCurrency from "../../../../utilities/formatCurrency";
 import './StoreItem.css';
 import { useMerchCart } from "../../../../context/MerchCartContext";
+import { Button, Modal } from "react-bootstrap";
 
 export default function StoreItem({ item, allItems }) {
     const { increaseItemQuantity } = useMerchCart();
     const [selectedSize, setSelectedSize] = useState("");
     const [itemAdded, setItemAdded] = useState(false);
+    const [showAlert, setShowAlert] = useState(false);
+    const [alertMessage, setAlertMessage] = useState("");
 
     // Get all sizes for this style
     const relatedItems = allItems.filter(i => i.name.split(' - ')[0] === item.name.split(' - ')[0]);
@@ -34,10 +37,12 @@ export default function StoreItem({ item, allItems }) {
                     setItemAdded(false);
                 }, 1000);
             } else {
-                alert("Selected size is out of stock");
+                setAlertMessage("Selected size is out of stock");
+                setShowAlert(true);
             }
         } else {
-            alert("Please select a size");
+            setAlertMessage("Please select a size");
+            setShowAlert(true);
         }
     };
 
@@ -80,6 +85,18 @@ export default function StoreItem({ item, allItems }) {
                     {itemAdded ? "Item Added!" : "+ Add To Cart"}
                 </button>
             </div>
+
+            <Modal show={showAlert} onHide={() => setShowAlert(false)} centered>
+                <Modal.Header closeButton>
+                    <Modal.Title>Jeff says...</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{alertMessage}</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => setShowAlert(false)}>
+                        Close
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 }
