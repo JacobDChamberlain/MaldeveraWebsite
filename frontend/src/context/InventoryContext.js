@@ -7,7 +7,7 @@ export function useInventory() {
 }
 
 export function InventoryProvider({ children }) {
-  const [inventory, setInventory] = useState({})
+  const [inventory, setInventory] = useState([])
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {

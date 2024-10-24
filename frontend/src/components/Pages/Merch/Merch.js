@@ -1,20 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';  // You can remove useState since we're using context
 import StoreItem from './StoreItem/StoreItem';
 import './Merch.css';
+import { useInventory } from '../../../context/InventoryContext';
 
 export default function Merch() {
-    const [merchItems, setMerchItems] = useState([]);
-
-    // Fetch the inventory data from the backend
-    useEffect(() => {
-        fetch('http://localhost:5001/api/inventory')
-            .then(response => response.json())
-            .then(data => setMerchItems(data))
-            .catch(error => console.error('Error fetching inventory:', error));
-    }, []);
+    const { inventory, loading } = useInventory();
 
     // Filter items to display only one representative for each style
-    const uniqueItems = merchItems.reduce((acc, currentItem) => {
+    const uniqueItems = inventory.reduce((acc, currentItem) => {
         const existingItem = acc.find(item => item.name.split(' - ')[0] === currentItem.name.split(' - ')[0]);
         if (!existingItem) {
             acc.push(currentItem);
@@ -22,10 +15,14 @@ export default function Merch() {
         return acc;
     }, []);
 
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
     return (
         <ul className="merch-ul">
             {uniqueItems.map(item => (
-                <StoreItem key={item.id} item={item} allItems={merchItems} />
+                <StoreItem key={item.id} item={item} allItems={inventory} />
             ))}
         </ul>
     );

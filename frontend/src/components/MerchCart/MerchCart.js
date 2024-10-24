@@ -16,11 +16,8 @@ export function MerchCart({ isOpen }) {
 
     // Fetch the inventory data from the backend
     useEffect(() => {
-        fetch('http://localhost:5001/api/inventory')
-            .then(response => response.json())
-            .then(data => setMerchItems(data))
-            .catch(error => console.error('Error fetching inventory:', error));
-    }, []);
+        if (inventory) setMerchItems(inventory);
+    }, [inventory]);
 
     // Handle purchasing items in the cart
     const handlePurchase = () => {
