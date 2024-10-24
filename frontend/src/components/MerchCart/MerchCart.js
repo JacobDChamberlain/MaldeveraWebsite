@@ -4,9 +4,11 @@ import { CartItem } from "../CartItem/CartItem";
 import './MerchCart.css';
 import formatCurrency from "../../utilities/formatCurrency";
 import { useEffect, useState } from "react";
+import { useInventory } from "../../context/InventoryContext";
 
 export function MerchCart({ isOpen }) {
     const { closeCart, cartItems, clearCart, increaseItemQuantity, decreaseItemQuantity } = useMerchCart();
+    const { inventory } = useInventory(); //* figure out if this is correct, then replace merchItems with this, or setMerchItems(inventory)
     const [merchItems, setMerchItems] = useState([]);
     const [showAlert, setShowAlert] = useState(false);
     const [alertMessage, setAlertMessage] = useState("");

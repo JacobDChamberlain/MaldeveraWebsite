@@ -17,29 +17,32 @@ import FloatingCartButton from '../FloatingCartButton/FloatingCartButton';
 import './App.css';
 
 import { MerchCartProvider } from '../../context/MerchCartContext';
+import { InventoryProvider } from '../../context/InventoryContext';
 
 function App() {
   return (
     <div className="App">
-      <MerchCartProvider>
-        <BrowserRouter>
-          <NavBar />
-          <Header />
-          <SocialMediaBar />
-            <Routes>
-              <Route path='/' Component={ Home } />
-              <Route path='/merch' Component={ Merch } />
-              <Route path='/about' Component={ About } />
-              <Route path='/shows' Component={ Shows } />
-              <Route path='/tour' Component={ Tours } />
-              <Route path='/tours' Component={ Tours } />
-              <Route path='/contact' Component={ Contact } />
-              <Route path='/checkout' Component={ Purchase } />
-              <Route path='*' Component={ NotFound } />
-            </Routes>
-        </BrowserRouter>
-        <FloatingCartButton />
-      </MerchCartProvider>
+      <InventoryProvider>
+        <MerchCartProvider>
+          <BrowserRouter>
+            <NavBar />
+            <Header />
+            <SocialMediaBar />
+              <Routes>
+                <Route path='/' Component={ Home } />
+                <Route path='/merch' Component={ Merch } />
+                <Route path='/about' Component={ About } />
+                <Route path='/shows' Component={ Shows } />
+                <Route path='/tour' Component={ Tours } />
+                <Route path='/tours' Component={ Tours } />
+                <Route path='/contact' Component={ Contact } />
+                <Route path='/checkout' Component={ Purchase } />
+                <Route path='*' Component={ NotFound } />
+              </Routes>
+          </BrowserRouter>
+          <FloatingCartButton />
+        </MerchCartProvider>
+      </InventoryProvider>
       <Footer />
     </div>
   );
