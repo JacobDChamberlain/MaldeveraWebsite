@@ -64,6 +64,7 @@ export function MerchCart({ isOpen }) {
                             <CartItem
                                 key={`${item.id}-${item.size}`}
                                 {...item}
+                                merchItems={merchItems}
                                 increaseQuantity={() => increaseItemQuantity(item.id, item.size)}
                                 decreaseQuantity={() => decreaseItemQuantity(item.id, item.size)}
                             />

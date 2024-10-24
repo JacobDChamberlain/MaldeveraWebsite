@@ -1,9 +1,8 @@
 import React from "react";
 import formatCurrency from "../../utilities/formatCurrency";
 import { useMerchCart } from "../../context/MerchCartContext";
-import merchItems from '../../merchdata/merchitems.json';
 
-export function CartItem({ id, quantity, size }) {
+export function CartItem({ id, quantity, size, merchItems }) {
     const { removeFromCart, increaseItemQuantity, decreaseItemQuantity } = useMerchCart();
     const item = merchItems.find(i => i.id === id);
 
