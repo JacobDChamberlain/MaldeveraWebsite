@@ -25,14 +25,14 @@ export default function StoreItem({ item, allItems }) {
     const handleAddToCart = () => {
         if (selectedSize) {
             const selectedItem = relatedItems.find(i => i.size === selectedSize);
-            if (selectedItem && selectedItem.quantity > 0) {
+            if (selectedItem && selectedItem.stock > 0) {
                 increaseItemQuantity(selectedItem.id, selectedSize, availableSizes);
                 setItemAdded(true);
 
                 // Reset itemAdded state after a short delay (e.g., 2 seconds)
                 setTimeout(() => {
                     setItemAdded(false);
-                }, 2000);
+                }, 1000);
             } else {
                 alert("Selected size is out of stock");
             }

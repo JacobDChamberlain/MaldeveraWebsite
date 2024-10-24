@@ -8,7 +8,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "XS",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 2,
@@ -19,7 +19,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "S",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 3,
@@ -30,7 +30,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "M",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 4,
@@ -41,7 +41,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "L",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 5,
@@ -52,7 +52,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "XL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 6,
@@ -63,7 +63,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "XXL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 7,
@@ -74,7 +74,7 @@
     "description": "A wild BLUE JEFF appears...",
     "price": 19.99,
     "size": "XXXL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 8,
@@ -85,7 +85,7 @@
     "description": "BAPTIZED...IN BLOOD!",
     "price": 19.99,
     "size": "XS",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 9,
@@ -96,7 +96,7 @@
     "description": "BAPTIZED...IN BLOOD!",
     "price": 19.99,
     "size": "S",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 10,
@@ -107,7 +107,7 @@
     "description": "BAPTIZED...IN BLOOD!",
     "price": 19.99,
     "size": "M",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 11,
@@ -118,7 +118,7 @@
     "description": "BAPTIZED...IN BLOOD!",
     "price": 19.99,
     "size": "L",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 12,
@@ -129,7 +129,7 @@
     "description": "BAPTIZED...IN BLOOD!",
     "price": 19.99,
     "size": "XL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 13,
@@ -140,7 +140,7 @@
     "description": "BAPTIZED...IN BLOOD!",
     "price": 19.99,
     "size": "XXL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 14,
@@ -151,7 +151,7 @@
     "description": "BAPTIZED...IN BLOOD!",
     "price": 19.99,
     "size": "XXXL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 15,
@@ -162,7 +162,7 @@
     "description": "Salvadora Maldevera",
     "price": 19.99,
     "size": "XS",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 16,
@@ -173,7 +173,7 @@
     "description": "Salvadora Maldevera",
     "price": 19.99,
     "size": "S",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 17,
@@ -184,7 +184,7 @@
     "description": "Salvadora Maldevera",
     "price": 19.99,
     "size": "M",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 18,
@@ -195,7 +195,7 @@
     "description": "Salvadora Maldevera",
     "price": 19.99,
     "size": "L",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 19,
@@ -206,7 +206,7 @@
     "description": "Salvadora Maldevera",
     "price": 19.99,
     "size": "XL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 20,
@@ -217,7 +217,7 @@
     "description": "Salvadora Maldevera",
     "price": 19.99,
     "size": "XXL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 21,
@@ -228,7 +228,7 @@
     "description": "Salvadora Maldevera",
     "price": 19.99,
     "size": "XXXL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 22,
@@ -239,7 +239,7 @@
     "description": "From Man To Mist",
     "price": 29.99,
     "size": "XS",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 23,
@@ -250,7 +250,7 @@
     "description": "From Man To Mist",
     "price": 29.99,
     "size": "S",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 24,
@@ -261,7 +261,7 @@
     "description": "From Man To Mist",
     "price": 29.99,
     "size": "M",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 25,
@@ -272,7 +272,7 @@
     "description": "From Man To Mist",
     "price": 29.99,
     "size": "L",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 26,
@@ -283,7 +283,7 @@
     "description": "From Man To Mist",
     "price": 29.99,
     "size": "XL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 27,
@@ -294,7 +294,7 @@
     "description": "From Man To Mist",
     "price": 29.99,
     "size": "XXL",
-    "quantity": 5
+    "stock": 5
   },
   {
     "id": 28,
@@ -305,6 +305,6 @@
     "description": "From Man To Mist",
     "price": 29.99,
     "size": "XXXL",
-    "quantity": 5
+    "stock": 5
   }
 ]

@@ -42,9 +42,9 @@ app.post('/api/purchase', (req, res) => {
         // Find the item in the inventory
         const itemIndex = inventory.findIndex(i => i.id === id);
 
-        if (itemIndex !== -1 && inventory[itemIndex].quantity >= quantity) {
-            // Decrement the item's quantity
-            inventory[itemIndex].quantity -= quantity;
+        if (itemIndex !== -1 && inventory[itemIndex].stock >= quantity) {
+            // Decrement the item's stock
+            inventory[itemIndex].stock -= quantity;
 
             // Add the item to the list of purchased items
             purchasedItems.push({
