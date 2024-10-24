@@ -1,67 +1,72 @@
 const express = require('express');
 const cors = require('cors');
-const fs = require('fs');
+const { sequelize, Item } = require('./models'); // Import Sequelize instance and Item model
 const app = express();
 const port = 5001;
 
 app.use(express.json());
 app.use(cors());
 
-// Function to read the inventory data from the file
-function readInventory() {
-    const data = fs.readFileSync('./inventory.json', 'utf-8');
-    return JSON.parse(data);
-}
-
-// Function to write the updated inventory back to the file
-function writeInventory(inventory) {
-    fs.writeFileSync('./inventory.json', JSON.stringify(inventory, null, 2), 'utf-8');
-}
 
 // Endpoint to get inventory
-app.get('/api/inventory', (req, res) => {
-    const inventory = readInventory();
-    res.json(inventory);
+app.get('/api/inventory', async (req, res) => {
+    try {
+        const inventory = await Item.findAll(); // Fetch all items from the database
+        res.json(inventory);
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Failed to fetch inventory', error: error.message });
+    }
 });
 
 // Endpoint to get an item by ID
-app.get('/api/inventory/:id', (req, res) => {
+app.get('/api/inventory/:id', async (req, res) => {
     const { id } = req.params;
-    const inventory = readInventory();
-    const item = inventory.find(i => i.id === id);
-    res.json(item);
+    try {
+        const item = await Item.findByPk(id); // Find an item by its primary key (ID)
+
+        if (!item) {
+            return res.status(404).json({ success: false, message: 'Item not found' });
+        }
+
+        res.json(item);
+    } catch (error) {
+        res.status(500).json({ success: false, message: 'Failed to fetch item', error: error.message });
+    }
 });
 
 // Endpoint to decrement multiple item quantities
-app.post('/api/purchase', (req, res) => {
+app.post('/api/purchase', async (req, res) => {
     const itemsToPurchase = req.body; // Array of objects { id, quantity }
-    let inventory = readInventory();
     const purchasedItems = [];
 
-    for (const { id, quantity } of itemsToPurchase) {
-        // Find the item in the inventory
-        const itemIndex = inventory.findIndex(i => i.id === id);
+    try {
+        // Use a transaction to ensure atomicity
+        await sequelize.transaction(async (t) => {
+            for (const { id, quantity } of itemsToPurchase) {
+                const item = await Item.findByPk(id, { transaction: t });
 
-        if (itemIndex !== -1 && inventory[itemIndex].stock >= quantity) {
-            // Decrement the item's stock
-            inventory[itemIndex].stock -= quantity;
+                if (!item || item.stock < quantity) {
+                    throw new Error(`Requested quantity not available for ${item ? item.name : 'Unknown item'}`);
+                }
 
-            // Add the item to the list of purchased items
-            purchasedItems.push({
-                id,
-                name: inventory[itemIndex].name,
-                quantity
-            });
-        } else {
-            return res.status(400).json({ success: false, message: `Requested quantity not available for ${inventory[itemIndex].name}` });
-        }
+                // Decrement the item's stock
+                item.stock -= quantity;
+                await item.save({ transaction: t });
+
+                // Add the item to the list of purchased items
+                purchasedItems.push({
+                    id: item.id,
+                    name: item.name,
+                    quantity
+                });
+            }
+        });
+
+        // Return the list of purchased items
+        res.status(200).json({ success: true, purchasedItems });
+    } catch (error) {
+        res.status(400).json({ success: false, message: error.message });
     }
-
-    // Save the updated inventory back to the file
-    writeInventory(inventory);
-
-    // Return the list of purchased items
-    res.status(200).json({ success: true, purchasedItems });
 });
 
 app.listen(port, () => {
