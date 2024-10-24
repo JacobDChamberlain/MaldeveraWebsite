@@ -40,6 +40,12 @@ app.post('/api/purchase', async (req, res) => {
     const purchasedItems = [];
 
     try {
+        for ( let item of itemsToPurchase ) {
+            if (item.quantity < 1 ) {
+                throw new Error("Invalid item quantity");
+            }
+        }
+
         // Use a transaction to ensure atomicity
         await sequelize.transaction(async (t) => {
             for (const { id, quantity } of itemsToPurchase) {
