@@ -3,7 +3,7 @@
     "username": "jeff",
     "password": "panda666",
     "database": "maldevera_merch_inventory",
-    "host": "127.0.0.1",
+    "host": "db",
     "dialect": "postgres"
   }
 }
