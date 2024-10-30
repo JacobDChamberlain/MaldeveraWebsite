@@ -12,6 +12,9 @@ app.use(cors());
 app.get('/api/inventory', async (req, res) => {
     try {
         const inventory = await Item.findAll(); // Fetch all items from the database
+        //! this wont include an item if it's already been purchased, even at quantity 1
+        //?? figure out why this isn't returning all items, or at least all with stock > 0
+        console.log("GET /inventory: ", inventory);
         res.json(inventory);
     } catch (error) {
         res.status(500).json({ success: false, message: 'Failed to fetch inventory', error: error.message });
