@@ -9,3 +9,4 @@ module.exports = {
     dialect: 'postgres'
   }
 };
+//* try and use this later instead of config.json
