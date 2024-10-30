@@ -12,9 +12,9 @@ app.use(cors());
 app.get('/api/inventory', async (req, res) => {
     try {
         const inventory = await Item.findAll(); // Fetch all items from the database
-        //! this wont include an item if it's already been purchased, even at quantity 1
-        //?? figure out why this isn't returning all items, or at least all with stock > 0
-        console.log("GET /inventory: ", inventory);
+        //* each time an item is purchased, it's moved to the end of the inventory.
+        //* find out why, and fix it so the order stays the same.
+        //* this is important to display the shirt sizes in the correct order on the frontend
         res.json(inventory);
     } catch (error) {
         res.status(500).json({ success: false, message: 'Failed to fetch inventory', error: error.message });
