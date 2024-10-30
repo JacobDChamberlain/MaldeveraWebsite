@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const { sequelize, Item } = require('./models'); // Import Sequelize instance and Item model
 const app = express();
-require('dotenv').config();
+// require('dotenv').config();
 const port = process.env.PORT || 5001;
 
 
