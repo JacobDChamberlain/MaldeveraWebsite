@@ -7,7 +7,7 @@ module.exports = {
         "id": 1,
         "name": "Blue Jeff - XS",
         "images": [
-          "/images/BLUE-JEFF.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png"
         ],
         "description": "A wild BLUE JEFF appears...",
         "price": 19.99,
@@ -20,7 +20,7 @@ module.exports = {
         "id": 2,
         "name": "Blue Jeff - S",
         "images": [
-          "/images/BLUE-JEFF.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png"
         ],
         "description": "A wild BLUE JEFF appears...",
         "price": 19.99,
@@ -33,7 +33,7 @@ module.exports = {
         "id": 3,
         "name": "Blue Jeff - M",
         "images": [
-          "/images/BLUE-JEFF.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png"
         ],
         "description": "A wild BLUE JEFF appears...",
         "price": 19.99,
@@ -46,7 +46,7 @@ module.exports = {
         "id": 4,
         "name": "Blue Jeff - L",
         "images": [
-          "/images/BLUE-JEFF.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png"
         ],
         "description": "A wild BLUE JEFF appears...",
         "price": 19.99,
@@ -59,7 +59,7 @@ module.exports = {
         "id": 5,
         "name": "Blue Jeff - XL",
         "images": [
-          "/images/BLUE-JEFF.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png"
         ],
         "description": "A wild BLUE JEFF appears...",
         "price": 19.99,
@@ -72,7 +72,7 @@ module.exports = {
         "id": 6,
         "name": "Blue Jeff - XXL",
         "images": [
-          "/images/BLUE-JEFF.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png"
         ],
         "description": "A wild BLUE JEFF appears...",
         "price": 19.99,
@@ -85,7 +85,7 @@ module.exports = {
         "id": 7,
         "name": "Blue Jeff - XXXL",
         "images": [
-          "/images/BLUE-JEFF.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png"
         ],
         "description": "A wild BLUE JEFF appears...",
         "price": 19.99,
@@ -98,7 +98,7 @@ module.exports = {
         "id": 8,
         "name": "Gore Logo - XS",
         "images": [
-          "/images/GORE-LOGO.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/GORE-LOGO.png"
         ],
         "description": "BAPTIZED...IN BLOOD!",
         "price": 19.99,
@@ -111,7 +111,7 @@ module.exports = {
         "id": 9,
         "name": "Gore Logo - S",
         "images": [
-          "/images/GORE-LOGO.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/GORE-LOGO.png"
         ],
         "description": "BAPTIZED...IN BLOOD!",
         "price": 19.99,
@@ -124,7 +124,7 @@ module.exports = {
         "id": 10,
         "name": "Gore Logo - M",
         "images": [
-          "/images/GORE-LOGO.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/GORE-LOGO.png"
         ],
         "description": "BAPTIZED...IN BLOOD!",
         "price": 19.99,
@@ -137,7 +137,7 @@ module.exports = {
         "id": 11,
         "name": "Gore Logo - L",
         "images": [
-          "/images/GORE-LOGO.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/GORE-LOGO.png"
         ],
         "description": "BAPTIZED...IN BLOOD!",
         "price": 19.99,
@@ -150,7 +150,7 @@ module.exports = {
         "id": 12,
         "name": "Gore Logo - XL",
         "images": [
-          "/images/GORE-LOGO.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/GORE-LOGO.png"
         ],
         "description": "BAPTIZED...IN BLOOD!",
         "price": 19.99,
@@ -163,7 +163,7 @@ module.exports = {
         "id": 13,
         "name": "Gore Logo - XXL",
         "images": [
-          "/images/GORE-LOGO.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/GORE-LOGO.png"
         ],
         "description": "BAPTIZED...IN BLOOD!",
         "price": 19.99,
@@ -176,7 +176,7 @@ module.exports = {
         "id": 14,
         "name": "Gore Logo - XXXL",
         "images": [
-          "/images/GORE-LOGO.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/GORE-LOGO.png"
         ],
         "description": "BAPTIZED...IN BLOOD!",
         "price": 19.99,
@@ -189,7 +189,7 @@ module.exports = {
         "id": 15,
         "name": "Snake Skull - XS",
         "images": [
-          "/images/snake-skull.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/snake-skull.png"
         ],
         "description": "Salvadora Maldevera",
         "price": 19.99,
@@ -202,7 +202,7 @@ module.exports = {
         "id": 16,
         "name": "Snake Skull - S",
         "images": [
-          "/images/snake-skull.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/snake-skull.png"
         ],
         "description": "Salvadora Maldevera",
         "price": 19.99,
@@ -215,7 +215,7 @@ module.exports = {
         "id": 17,
         "name": "Snake Skull - M",
         "images": [
-          "/images/snake-skull.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/snake-skull.png"
         ],
         "description": "Salvadora Maldevera",
         "price": 19.99,
@@ -228,7 +228,7 @@ module.exports = {
         "id": 18,
         "name": "Snake Skull - L",
         "images": [
-          "/images/snake-skull.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/snake-skull.png"
         ],
         "description": "Salvadora Maldevera",
         "price": 19.99,
@@ -241,7 +241,7 @@ module.exports = {
         "id": 19,
         "name": "Snake Skull - XL",
         "images": [
-          "/images/snake-skull.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/snake-skull.png"
         ],
         "description": "Salvadora Maldevera",
         "price": 19.99,
@@ -254,7 +254,7 @@ module.exports = {
         "id": 20,
         "name": "Snake Skull - XXL",
         "images": [
-          "/images/snake-skull.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/snake-skull.png"
         ],
         "description": "Salvadora Maldevera",
         "price": 19.99,
@@ -267,7 +267,7 @@ module.exports = {
         "id": 21,
         "name": "Snake Skull - XXXL",
         "images": [
-          "/images/snake-skull.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/snake-skull.png"
         ],
         "description": "Salvadora Maldevera",
         "price": 19.99,
@@ -280,7 +280,7 @@ module.exports = {
         "id": 22,
         "name": "From Man To Mist - XS",
         "images": [
-          "/images/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -293,7 +293,7 @@ module.exports = {
         "id": 23,
         "name": "From Man To Mist - S",
         "images": [
-          "/images/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -306,7 +306,7 @@ module.exports = {
         "id": 24,
         "name": "From Man To Mist - M",
         "images": [
-          "/images/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -319,7 +319,7 @@ module.exports = {
         "id": 25,
         "name": "From Man To Mist - L",
         "images": [
-          "/images/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -332,7 +332,7 @@ module.exports = {
         "id": 26,
         "name": "From Man To Mist - XL",
         "images": [
-          "/images/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -345,7 +345,7 @@ module.exports = {
         "id": 27,
         "name": "From Man To Mist - XXL",
         "images": [
-          "/images/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -358,7 +358,7 @@ module.exports = {
         "id": 28,
         "name": "From Man To Mist - XXXL",
         "images": [
-          "/images/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
