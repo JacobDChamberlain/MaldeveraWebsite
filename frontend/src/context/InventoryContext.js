@@ -11,7 +11,7 @@ export function InventoryProvider({ children }) {
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/inventory')
+    fetch('https://maldeverawebsite-backend.onrender.com/api/inventory')
       .then(response => response.json())
       .then(data => {
         setInventory(data)
@@ -26,7 +26,7 @@ export function InventoryProvider({ children }) {
   const refreshInventory = useCallback(async () => {
     setLoading(true)
     try {
-      const response = await fetch('http://localhost:5001/api/inventory')
+      const response = await fetch('https://maldeverawebsite-backend.onrender.com/api/inventory')
       const data = await response.json()
       setInventory(data)
     } catch (error) {

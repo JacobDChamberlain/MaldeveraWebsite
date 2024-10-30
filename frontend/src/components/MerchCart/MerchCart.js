@@ -26,7 +26,7 @@ export function MerchCart({ isOpen }) {
             quantity
         }));
 
-        fetch('http://localhost:5001/api/purchase', {
+        fetch('https://maldeverawebsite-backend.onrender.com/api/purchase', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
