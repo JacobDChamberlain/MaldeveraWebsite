@@ -280,7 +280,7 @@ module.exports = {
         "id": 22,
         "name": "From Man To Mist - XS",
         "images": [
-          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -293,7 +293,7 @@ module.exports = {
         "id": 23,
         "name": "From Man To Mist - S",
         "images": [
-          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -306,7 +306,7 @@ module.exports = {
         "id": 24,
         "name": "From Man To Mist - M",
         "images": [
-          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -319,7 +319,7 @@ module.exports = {
         "id": 25,
         "name": "From Man To Mist - L",
         "images": [
-          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -332,7 +332,7 @@ module.exports = {
         "id": 26,
         "name": "From Man To Mist - XL",
         "images": [
-          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -345,7 +345,7 @@ module.exports = {
         "id": 27,
         "name": "From Man To Mist - XXL",
         "images": [
-          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
@@ -358,7 +358,7 @@ module.exports = {
         "id": 28,
         "name": "From Man To Mist - XXXL",
         "images": [
-          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/BLUE-JEFF.png/man2mist-FRONT.png"
+          "https://pub-66308e1fd62346cc9ef2c3cfc4134db4.r2.dev/man2mist-FRONT.png"
         ],
         "description": "From Man To Mist",
         "price": 29.99,
