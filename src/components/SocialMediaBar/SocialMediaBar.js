@@ -22,8 +22,8 @@ const socialMediaLinks = [
         imagePath: facebookLogo
     },
     {
-        name: 'twitter',
-        url: 'https://twitter.com/maldevera',
+        name: 'x',
+        url: 'https://x.com/maldevera',
         imagePath: xLogo
     },
     {
