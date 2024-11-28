@@ -8,6 +8,7 @@ import xLogo from '../../images/social_media-icons/icons8-x.svg';
 import spotifyLogo from '../../images/social_media-icons/icons8-spotify.svg';
 import youtubeLogo from '../../images/social_media-icons/icons8-youtube.svg';
 import appleLogo from '../../images/social_media-icons/icons8-music.svg';
+import bandcampLogo from '../../images/social_media-icons/icons8-bandcamp-is-an-american-online-music-company-48.png';
 
 
 const socialMediaLinks = [
@@ -40,6 +41,11 @@ const socialMediaLinks = [
         name: 'appleMusic',
         url: 'https://music.apple.com/us/artist/maldevera/546342013',
         imagePath: appleLogo
+    },
+    {
+        name: 'bandcamp',
+        url: 'https://maldevera.bandcamp.com/',
+        imagePath: bandcampLogo
     }
 ];
 
